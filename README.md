@@ -90,3 +90,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
   <https://creativecommons.org/licenses/by/4.0/legalcode>）。
 - 平台代码与规则数据是相互独立的作品：AGPL 不改变 `data/srd/` 等规则数据的 ORC 授权。
 - 应用内「许可与致谢」页（`/credits`）载有 ORC 声明、署名与源码获取方式。
+
+---
+
+<p><sub>DeepSeek 为开发辅助工具；本项目与 DeepSeek 官方无隶属、合作或背书关系。DeepSeek 名称归其权利人所有。</sub></p>
