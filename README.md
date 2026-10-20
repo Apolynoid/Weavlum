@@ -76,10 +76,15 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## 许可
 
-- **平台代码**：MIT（见 `LICENSE`）。
+- **平台代码**：GNU Affero 通用公共许可证第 3 版或更高版本（AGPL-3.0-or-later，见 `LICENSE`）。
+  本程序是自由软件：你可以再分发和/或修改它，但需遵守 AGPL。
+  **通过网络与本程序交互的用户有权获得 Corresponding Source（对应源码）**；
+  自托管到公网时请设置环境变量 `WEAVLUM_SOURCE_URL` 指向源码仓库，`/credits` 页会展示该链接。
 - **规则数据**：来自《黑旗角色扮演参考文档 v0.2》，
   **Black Flag Roleplaying Reference Document v0.2, © Open Design LLC d/b/a Kobold Press**，
   依据 ORC 许可证授权（存档编号 TX 9-307-067，<https://koboldpress.com/orclicense>）。
+  ORC 许可证全文见仓库根目录的 `LICENSE-ORC`。
   其中部分材料取自 Wizards of the Coast LLC 的 SRD 5.1（CC-BY-4.0，
   <https://creativecommons.org/licenses/by/4.0/legalcode>）。
-- 应用内「许可与致谢」页（`/credits`）载有完整 ORC 声明与署名。
+- 平台代码与规则数据是相互独立的作品：AGPL 不改变 `data/srd/` 等规则数据的 ORC 授权。
+- 应用内「许可与致谢」页（`/credits`）载有 ORC 声明、署名与源码获取方式。

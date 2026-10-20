@@ -8,7 +8,8 @@
   <p>本平台的职业、血统与传承、背景与天赋、法术、装备与魔法物品、怪物等全部规则数据，来自
     <strong>《黑旗角色扮演参考文档 v0.2》（Black Flag Roleplaying Reference Document v0.2）</strong>，
     由 Open Design LLC（以 Kobold Press 名义经营）依据 <strong>ORC 许可证（ORC License）</strong>授权发布。</p>
-  <p>中文译稿为本项目自行翻译，术语以《黑旗 SRD》中文术语表为准。</p>
+  <p>中文译稿为本项目自行翻译，术语以《黑旗 SRD》中文术语表为准。
+    ORC 许可证全文见仓库根目录的 <code>LICENSE-ORC</code>。</p>
 </div>
 
 <div class="card">
@@ -31,7 +32,13 @@
 
 <div class="card">
   <h2>平台代码</h2>
-  <p>Weavlum 平台自身的程序代码以 <strong>MIT 许可证</strong>发布，详见仓库根目录的 <code>LICENSE</code> 文件。
-    平台代码与其加载的 ORC 授权规则数据相互独立。</p>
+  <p>Weavlum 平台自身的程序代码以 <strong>GNU Affero 通用公共许可证第 3 版或更高版本（AGPL-3.0-or-later）</strong>发布，
+    详见仓库根目录的 <code>LICENSE</code> 文件。平台代码与其加载的 ORC 授权规则数据相互独立。</p>
+  <p>本程序是自由软件：你可以再分发和/或修改它，但需遵守 AGPL。
+    通过网络与本程序交互的用户有权获得 Corresponding Source（对应源码）。
+    {% if source_url %}<a href="{{ source_url }}" target="_blank" rel="noopener">获取源代码</a>。
+    {% else %}自托管部署请设置环境变量 <code>WEAVLUM_SOURCE_URL</code> 指向源码仓库，以在此展示链接。
+    {% endif %}</p>
+  <p>许可证文本：<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">GNU AGPL-3.0</a>。</p>
 </div>
 {% endblock %}

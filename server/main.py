@@ -61,6 +61,8 @@ AVATAR_NAME_RE = re.compile(r"^[a-f0-9]{16}\.(png|jpg|webp|gif)$")
 
 # --- 全局单例（单房间应用；重启后战役状态清空，角色卡从磁盘恢复）---
 HOST_TOKEN = os.environ.get("WEAVLUM_HOST_TOKEN", "DEV")   # 由 run.py 注入并持久化
+# AGPL §13：部署者提供的源码仓库地址；设置后会在 /credits 页展示给网络用户
+SOURCE_URL = os.environ.get("WEAVLUM_SOURCE_URL", "").strip()
 room = state_mod.RoomState()
 settings = state_mod.load_settings()
 ai_lock = asyncio.Lock()               # 串行化 AI 调用，避免多次回复交错
@@ -794,8 +796,8 @@ async def play_page(request: Request):
 
 @app.get("/credits")
 async def credits_page(request: Request):
-    """许可与致谢页（ORC 声明 + SRD 5.1 CC-BY-4.0 署名；公开页，无需登录）。"""
-    return TEMPLATES.TemplateResponse(request, "credits.html", {})
+    """许可与致谢页（AGPL 源码入口 + ORC 声明 + SRD 5.1 CC-BY-4.0 署名；公开页）。"""
+    return TEMPLATES.TemplateResponse(request, "credits.html", {"source_url": SOURCE_URL})
 
 
 @app.get("/manage")
