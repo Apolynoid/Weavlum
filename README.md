@@ -87,7 +87,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 - **规则数据**：来自《黑旗角色扮演参考文档 v0.2》，
   **Black Flag Roleplaying Reference Document v0.2, © Open Design LLC d/b/a Kobold Press**，
   依据 ORC 许可证授权（存档编号 TX 9-307-067，<https://koboldpress.com/orclicense>）。
-  ORC 许可证全文见仓库根目录的 `ORC-LICENSE`。
+  ORC 许可证全文见 `docs/ORC-TERMS.txt`。
   其中部分材料取自 Wizards of the Coast LLC 的 SRD 5.1（CC-BY-4.0，
   <https://creativecommons.org/licenses/by/4.0/legalcode>）。
 - 平台代码与规则数据是相互独立的作品：AGPL 不改变 `data/srd/` 等规则数据的 ORC 授权。
