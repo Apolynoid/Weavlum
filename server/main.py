@@ -61,8 +61,10 @@ AVATAR_NAME_RE = re.compile(r"^[a-f0-9]{16}\.(png|jpg|webp|gif)$")
 
 # --- 全局单例（单房间应用；重启后战役状态清空，角色卡从磁盘恢复）---
 HOST_TOKEN = os.environ.get("WEAVLUM_HOST_TOKEN", "DEV")   # 由 run.py 注入并持久化
-# AGPL §13：部署者提供的源码仓库地址；设置后会在 /credits 页展示给网络用户
-SOURCE_URL = os.environ.get("WEAVLUM_SOURCE_URL", "").strip()
+# AGPL §13：源码仓库地址（默认指向本项目仓库；部署者可用环境变量覆盖）
+SOURCE_URL = os.environ.get(
+    "WEAVLUM_SOURCE_URL", "https://github.com/Apolynoid/Weavlum"
+).strip()
 room = state_mod.RoomState()
 settings = state_mod.load_settings()
 ai_lock = asyncio.Lock()               # 串行化 AI 调用，避免多次回复交错

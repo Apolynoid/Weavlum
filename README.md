@@ -81,7 +81,8 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 - **平台代码**：GNU Affero 通用公共许可证第 3 版或更高版本（AGPL-3.0-or-later，见 `LICENSE`）。
   本程序是自由软件：你可以再分发和/或修改它，但需遵守 AGPL。
   **通过网络与本程序交互的用户有权获得 Corresponding Source（对应源码）**；
-  自托管到公网时请设置环境变量 `WEAVLUM_SOURCE_URL` 指向源码仓库，`/credits` 页会展示该链接。
+  源码默认指向 <https://github.com/Apolynoid/Weavlum>，`/credits` 页会展示链接；
+  部署者可用环境变量 `WEAVLUM_SOURCE_URL` 覆盖。
 - **规则数据**：来自《黑旗角色扮演参考文档 v0.2》，
   **Black Flag Roleplaying Reference Document v0.2, © Open Design LLC d/b/a Kobold Press**，
   依据 ORC 许可证授权（存档编号 TX 9-307-067，<https://koboldpress.com/orclicense>）。
