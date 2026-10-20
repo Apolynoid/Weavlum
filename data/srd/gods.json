@@ -1,0 +1,376 @@
+{
+ "egyptian-pantheon": {
+  "name": "埃及神系",
+  "name_en": "Egyptian Pantheon",
+  "desc": "这些神明是一个古老神圣家族的王朝，是宇宙统治权的继承人。他们维护真理、正义、法律与秩序的宇宙力量。正如国王与王后统御其封臣，这些神明引导其信徒穿越此生与死后的旅程。",
+  "deities": [
+   {
+    "name": "阿努比斯",
+    "name_en": "Anubis",
+    "title": "审判之神与亡者的引路人",
+    "domains": [
+     "死亡"
+    ],
+    "symbol": "黑色胡狼"
+   },
+   {
+    "name": "巴丝特",
+    "name_en": "Bast",
+    "title": "猫与复仇之女神",
+    "domains": [
+     "战争"
+    ],
+    "symbol": "猫"
+   },
+   {
+    "name": "哈托尔",
+    "name_en": "Hathor",
+    "title": "爱、音乐与母性之女神",
+    "domains": [
+     "生命",
+     "光明"
+    ],
+    "symbol": "有角母牛"
+   },
+   {
+    "name": "伊西斯",
+    "name_en": "Isis",
+    "title": "丰饶与魔法之女神",
+    "domains": [
+     "知识",
+     "生命"
+    ],
+    "symbol": "安卡与星辰"
+   },
+   {
+    "name": "奈芙蒂斯",
+    "name_en": "Nephthys",
+    "title": "死亡与悲伤之女神",
+    "domains": [
+     "死亡"
+    ],
+    "symbol": "环绕月盘的角"
+   },
+   {
+    "name": "奥西里斯",
+    "name_en": "Osiris",
+    "title": "自然与冥界之神",
+    "domains": [
+     "生命",
+     "自然"
+    ],
+    "symbol": "弯杖与连枷"
+   },
+   {
+    "name": "普塔",
+    "name_en": "Ptah",
+    "title": "工艺与秘密之神",
+    "domains": [
+     "工艺",
+     "知识"
+    ],
+    "symbol": "公牛"
+   },
+   {
+    "name": "拉",
+    "name_en": "Ra",
+    "title": "太阳之神、众神之王",
+    "domains": [
+     "生命",
+     "光明"
+    ],
+    "symbol": "被蛇环绕的日轮"
+   },
+   {
+    "name": "赛特",
+    "name_en": "Set",
+    "title": "黑暗与灾祸之神",
+    "domains": [
+     "风暴",
+     "诡术"
+    ],
+    "symbol": "盘起的眼镜蛇"
+   },
+   {
+    "name": "索贝克",
+    "name_en": "Sobek",
+    "title": "水之神",
+    "domains": [
+     "自然",
+     "风暴"
+    ],
+    "symbol": "鳄鱼头"
+   },
+   {
+    "name": "托特",
+    "name_en": "Thoth",
+    "title": "知识与智慧之神",
+    "domains": [
+     "知识"
+    ],
+    "symbol": "朱鹭"
+   }
+  ]
+ },
+ "greek-pantheon": {
+  "name": "希腊神系",
+  "name_en": "Greek Pantheon",
+  "desc": "这些神明统治着名为奥林匹斯的高天山脉国度，但他们远非与凡人的事务相隔绝。这个神系的神祇对自然力量拥有可怖的掌控力，却又被极度人性化的激情所支配，使他们永无休止地争吵、恋爱、互相争斗——往往殃及被卷入其中的凡人旁观者。",
+  "deities": [
+   {
+    "name": "阿佛洛狄忒",
+    "name_en": "Aphrodite",
+    "title": "爱与美之女神",
+    "domains": [
+     "光明"
+    ],
+    "symbol": "贝壳"
+   },
+   {
+    "name": "阿波罗",
+    "name_en": "Apollo",
+    "title": "光明、音乐与治疗之神",
+    "domains": [
+     "知识",
+     "生命",
+     "光明"
+    ],
+    "symbol": "里拉琴"
+   },
+   {
+    "name": "阿瑞斯",
+    "name_en": "Ares",
+    "title": "战争与冲突之神",
+    "domains": [
+     "战争"
+    ],
+    "symbol": "长矛"
+   },
+   {
+    "name": "阿尔忒弥斯",
+    "name_en": "Artemis",
+    "title": "狩猎与生育之女神",
+    "domains": [
+     "生命",
+     "自然"
+    ],
+    "symbol": "弓与月轮上的箭"
+   },
+   {
+    "name": "雅典娜",
+    "name_en": "Athena",
+    "title": "智慧与文明之女神",
+    "domains": [
+     "知识",
+     "战争"
+    ],
+    "symbol": "猫头鹰"
+   },
+   {
+    "name": "得墨忒耳",
+    "name_en": "Demeter",
+    "title": "农业之女神",
+    "domains": [
+     "生命",
+     "自然"
+    ],
+    "symbol": "丰裕之角"
+   },
+   {
+    "name": "狄俄尼索斯",
+    "name_en": "Dionysus",
+    "title": "欢乐与葡萄酒之神",
+    "domains": [
+     "生命"
+    ],
+    "symbol": "酒神杖（顶端缀有松果的手杖）"
+   },
+   {
+    "name": "哈迪斯",
+    "name_en": "Hades",
+    "title": "冥界之神",
+    "domains": [
+     "死亡"
+    ],
+    "symbol": "黑色公羊"
+   },
+   {
+    "name": "赫卡忒",
+    "name_en": "Hecate",
+    "title": "魔法与月亮之女神",
+    "domains": [
+     "知识",
+     "诡术"
+    ],
+    "symbol": "下沉的月亮"
+   },
+   {
+    "name": "赫菲斯托斯",
+    "name_en": "Hephaestus",
+    "title": "锻造与工艺之神",
+    "domains": [
+     "工艺"
+    ],
+    "symbol": "锤与铁砧"
+   },
+   {
+    "name": "赫拉",
+    "name_en": "Hera",
+    "title": "家庭与权谋之女神",
+    "domains": [
+     "生命",
+     "诡术"
+    ],
+    "symbol": "孔雀羽毛"
+   },
+   {
+    "name": "赫尔墨斯",
+    "name_en": "Hermes",
+    "title": "旅行与商业之神",
+    "domains": [
+     "诡术"
+    ],
+    "symbol": "双蛇杖（带翼的杖与蛇）"
+   },
+   {
+    "name": "潘",
+    "name_en": "Pan",
+    "title": "自然之神",
+    "domains": [
+     "自然"
+    ],
+    "symbol": "排箫"
+   },
+   {
+    "name": "波塞冬",
+    "name_en": "Poseidon",
+    "title": "海洋之神",
+    "domains": [
+     "风暴"
+    ],
+    "symbol": "三叉戟"
+   },
+   {
+    "name": "宙斯",
+    "name_en": "Zeus",
+    "title": "天空之神、众神之王",
+    "domains": [
+     "风暴"
+    ],
+    "symbol": "闪电"
+   }
+  ]
+ },
+ "norse-pantheon": {
+  "name": "北欧神系",
+  "name_en": "Norse Pantheon",
+  "desc": "这些神明统御着严酷的土地——不够强壮或聪明的人难以在此存活。这种挣扎也映照在该神系的宇宙斗争中：与企图终结一切的势力进行永无休止的战争。他们的力量与张扬的个性，既反映了生存所需的强有力领导与果断行动，也体现了对人生欢愉的拥抱。",
+  "deities": [
+   {
+    "name": "巴德尔",
+    "name_en": "Baldur",
+    "title": "美与诗歌之神",
+    "domains": [
+     "生命",
+     "光明"
+    ],
+    "symbol": "镶宝石的银杯"
+   },
+   {
+    "name": "福尔赛提",
+    "name_en": "Forseti",
+    "title": "正义与法律之神",
+    "domains": [
+     "光明"
+    ],
+    "symbol": "蓄须男子的头颅"
+   },
+   {
+    "name": "芙蕾雅",
+    "name_en": "Freya",
+    "title": "丰饶与爱之女神",
+    "domains": [
+     "生命",
+     "光明"
+    ],
+    "symbol": "猎鹰"
+   },
+   {
+    "name": "海姆达尔",
+    "name_en": "Heimdall",
+    "title": "警戒与忠诚之神",
+    "domains": [
+     "光明",
+     "战争"
+    ],
+    "symbol": "弯曲的号角"
+   },
+   {
+    "name": "海拉",
+    "name_en": "Hel",
+    "title": "冥界之女神",
+    "domains": [
+     "死亡"
+    ],
+    "symbol": "半边腐烂的女子面孔"
+   },
+   {
+    "name": "洛基",
+    "name_en": "Loki",
+    "title": "窃贼与诡诈之神",
+    "domains": [
+     "诡术"
+    ],
+    "symbol": "火焰"
+   },
+   {
+    "name": "尼约德",
+    "name_en": "Njord",
+    "title": "海洋与风之神",
+    "domains": [
+     "自然",
+     "风暴"
+    ],
+    "symbol": "金币"
+   },
+   {
+    "name": "西芙",
+    "name_en": "Sif",
+    "title": "战争之女神",
+    "domains": [
+     "战争"
+    ],
+    "symbol": "举起的剑"
+   },
+   {
+    "name": "奥丁",
+    "name_en": "Odin",
+    "title": "知识与战争之神",
+    "domains": [
+     "知识",
+     "战争"
+    ],
+    "symbol": "注视的蓝色眼眸"
+   },
+   {
+    "name": "托尔",
+    "name_en": "Thor",
+    "title": "雷霆、力量与战争之神",
+    "domains": [
+     "风暴",
+     "战争"
+    ],
+    "symbol": "战锤"
+   },
+   {
+    "name": "乌勒尔",
+    "name_en": "Uller",
+    "title": "狩猎与冬季之神",
+    "domains": [
+     "自然"
+    ],
+    "symbol": "长弓"
+   }
+  ]
+ }
+}

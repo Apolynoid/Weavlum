@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}创建角色 · Weavlum{% endblock %}
+{% block content %}
+<h1>创建你的角色</h1>
+<p class="dim">玩家：{{ nickname }}　·　所有派生数值由引擎自动计算（Black Flag SRD）</p>
+<div class="create-layout">
+  <div class="create-main">
+    <div class="card">
+      <h2>1. 基础</h2>
+      <div class="grid3">
+        <div class="field"><label>角色名</label><input id="f-name" maxlength="30" placeholder="例如：莱拉"></div>
+        <div class="field"><label>性别</label>
+          <select id="f-gender">
+            <option value="">未指定</option>
+            <option value="男">男</option>
+            <option value="女">女</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="field"><label class="tip" id="race-label">血统</label><select id="f-race"></select></div>
+        <div class="field"><label class="tip" id="heritage-label">传承</label><select id="f-heritage"></select></div>
+        <div class="field hidden" id="adaptation-field"><label class="tip" id="adaptation-label">自然适应</label><select id="f-adaptation"></select></div>
+        <div class="field hidden" id="adaptation-ability-field"><label class="tip" id="adaptation-ability-label">次级幻影施法属性</label><select id="f-adaptation-ability"></select></div>
+        <div class="field"><label>职业</label><select id="f-class"></select></div>
+        <div class="field"><label>背景</label><select id="f-background"></select></div>
+        <div class="field"><label class="tip" id="bg-talent-label">背景天赋（三选一）</label><select id="f-bg-talent"></select></div>
+        <div class="field" id="free-talent-field"><label class="tip" id="free-talent-label">自选天赋（人类「雄心」）</label><select id="f-free-talent"></select></div>
+        <div class="field hidden" id="school-field"><label class="tip">学派专精的学派</label><select id="f-talent-school"></select></div>
+      </div>
+      <p class="dim" id="bg-talent-desc" style="white-space: pre-line;"></p>
+      <p class="dim" id="free-talent-desc" style="white-space: pre-line;"></p>
+      <p class="dim" id="race-desc" style="white-space: pre-line;"></p>
+      <p class="dim" id="heritage-desc" style="white-space: pre-line;"></p>
+      <p class="dim" id="adaptation-desc" style="white-space: pre-line;"></p>
+      <p class="dim" id="class-desc"></p>
+      <p class="dim" id="feature-desc"></p>
+      <details class="prog-details hidden" id="prog-details"></details>
+      <p class="dim" id="bg-desc" style="white-space: pre-line;"></p>
+    </div>
+    <div class="card">
+      <h2>2. 属性</h2>
+      <div class="tabs">
+        <button class="tab" data-method="pointbuy">点买（32点）</button>
+        <button class="tab" data-method="standard">标准数组</button>
+        <button class="tab" data-method="roll">掷骰 4d6取三高</button>
+      </div>
+      <div id="method-area"></div>
+      <div class="row">
+        <button class="btn" id="btn-recommend">按推荐分配属性</button>
+        <span class="dim">按当前职业的推荐优先级一键分配，可再手动微调</span>
+      </div>
+      <div id="ability-area"></div>
+      <div id="roll-bonus-area"></div>
+    </div>
+    <div class="card">
+      <h2>3. 技能</h2>
+      <p class="dim" id="skill-hint"></p>
+      <div id="skill-area" class="skill-grid"></div>
+      <p class="dim" id="bg-skill-hint"></p>
+      <div id="bg-skill-area" class="skill-grid"></div>
+      <div id="human-skill-wrap" class="hidden">
+        <p class="dim" id="human-skill-hint"></p>
+        <div id="human-skill-area" class="skill-grid"></div>
+      </div>
+    </div>
+    <div class="card hidden" id="spell-card">
+      <h2>4. 法术（施法职业）</h2>
+      <p class="dim" id="spell-hint"></p>
+      <div class="tabs">
+        <button class="tab" data-spellmode="class">职业表内自选</button>
+        <button class="tab" data-spellmode="free">完全自由搭配（跨职业表）</button>
+      </div>
+      <div class="row">
+        <button class="btn" id="btn-spell-recommend">填入推荐包</button>
+        <span class="dim" id="spell-count"></span>
+      </div>
+      <div id="spell-area"></div>
+    </div>
+    <div class="card">
+      <h2>5. 装备</h2>
+      <p class="dim">职业初始装备逐行选择（BFRD 选项组）；「军用/简易武器」类选项可再挑具体武器。护甲与盾牌随所选装备自动生效（AC 按物品库数据计算，入场后可在角色卡换装）。</p>
+      <div id="equip-area"></div>
+    </div>
+    <div class="card">
+      <h2>6. 背景故事（可选）</h2>
+      <textarea id="f-backstory" rows="4" placeholder="你的来处、信念、牵挂……"></textarea>
+    </div>
+    <div id="create-msg" class="msg"></div>
+    <button class="btn primary big" id="btn-submit">完成创建，入场</button>
+  </div>
+  <aside class="create-side">
+    <div class="card sticky">
+      <h2>实时预览</h2>
+      <div id="preview"></div>
+    </div>
+  </aside>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+window.SRD = {{ srd | safe }};
+window.ABILITY_NAMES = {{ ability_names | safe }};
+window.ITEMS = {{ items | safe }};
+window.EQUIP_SPECS = {{ equip_specs | safe }};
+window.STANDARD_ARRAY = {{ standard_array | safe }};
+window.SPELL_SCHOOLS = {{ talent_schools | safe }};
+window.SPELLS = {{ spells | safe }};
+window.SPELL_RULES = {{ spell_rules | safe }};
+window.NICKNAME = {{ nickname | tojson }};
+</script>
+<script src="/static/create.js?v={{ asset_version }}"></script>
+{% endblock %}

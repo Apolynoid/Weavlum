@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+data/settings.json
+data/host_token.txt
+data/saves/
+data/characters/
+data/logs/
+data/avatars/
+data/_srd51_backup/
+markdown/
+data/bin/
+data/server.pid
+# 运行时状态：战役/玩家档案/主持会话 id（含个人信息与敏感会话标识）
+data/room_meta.json
+# BFRD 构建中间产物（scripts/build_bfrd.py 生成；运行只需要 data/srd）
+data/bfrd_staging/
+# 内部规格与工作流记录（不纳入公开仓库）
+.scratch/
+docs/agents/
+
+# 本地 agent 工作说明（不随仓库发布）
+AGENTS.md

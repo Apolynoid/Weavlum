@@ -1,0 +1,4714 @@
+{
+ "entries": [
+  {
+   "en": "ability score",
+   "zh": "属性值",
+   "note": "六项：STR/DEX/CON/INT/WIS/CHA",
+   "section": "核心机制"
+  },
+  {
+   "en": "ability modifier",
+   "zh": "属性调整值",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "advantage",
+   "zh": "优势",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "disadvantage",
+   "zh": "劣势",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "check",
+   "zh": "检定",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "ability check",
+   "zh": "属性检定",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "save",
+   "zh": "豁免",
+   "note": "saving throw = 豁免检定",
+   "section": "核心机制"
+  },
+  {
+   "en": "DC",
+   "zh": "难度等级",
+   "note": "Difficulty Class",
+   "section": "核心机制"
+  },
+  {
+   "en": "PB",
+   "zh": "熟练加值",
+   "note": "Proficiency Bonus",
+   "section": "核心机制"
+  },
+  {
+   "en": "proficiency",
+   "zh": "熟练（项）",
+   "note": "视语境",
+   "section": "核心机制"
+  },
+  {
+   "en": "skill",
+   "zh": "技能",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "proficiency bonus",
+   "zh": "熟练加值",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "GM",
+   "zh": "游戏主持人",
+   "note": "Game Master",
+   "section": "核心机制"
+  },
+  {
+   "en": "PC",
+   "zh": "玩家角色",
+   "note": "Player Character",
+   "section": "核心机制"
+  },
+  {
+   "en": "XP",
+   "zh": "经验值",
+   "note": "Experience Points",
+   "section": "核心机制"
+  },
+  {
+   "en": "level",
+   "zh": "等级",
+   "note": "level up = 升级",
+   "section": "核心机制"
+  },
+  {
+   "en": "class level",
+   "zh": "职业等级",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "character level",
+   "zh": "角色等级",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "hit points",
+   "zh": "生命值",
+   "note": "HP",
+   "section": "核心机制"
+  },
+  {
+   "en": "temporary HP",
+   "zh": "临时生命值",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "hit die / hit dice",
+   "zh": "生命骰",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "short rest",
+   "zh": "短休",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "long rest",
+   "zh": "长休",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "Luck",
+   "zh": "幸运",
+   "note": "BFRD 特色资源",
+   "section": "核心机制"
+  },
+  {
+   "en": "Doom",
+   "zh": "厄运",
+   "note": "BFRD 主持人资源",
+   "section": "核心机制"
+  },
+  {
+   "en": "milestone",
+   "zh": "里程碑",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "multiclassing",
+   "zh": "多职业",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "circle",
+   "zh": "环阶",
+   "note": "法术环阶，如 1st-circle = 1 环",
+   "section": "核心机制"
+  },
+  {
+   "en": "tag",
+   "zh": "标签",
+   "note": "如 Animal tag = 动物标签",
+   "section": "核心机制"
+  },
+  {
+   "en": "creature",
+   "zh": "生物",
+   "note": "",
+   "section": "核心机制"
+  },
+  {
+   "en": "CR",
+   "zh": "挑战等级",
+   "note": "Challenge Rating",
+   "section": "核心机制"
+  },
+  {
+   "en": "gp",
+   "zh": "金币",
+   "note": "gold pieces",
+   "section": "核心机制"
+  },
+  {
+   "en": "Strength",
+   "zh": "力量",
+   "note": "STR",
+   "section": "属性"
+  },
+  {
+   "en": "Dexterity",
+   "zh": "敏捷",
+   "note": "DEX",
+   "section": "属性"
+  },
+  {
+   "en": "Constitution",
+   "zh": "体质",
+   "note": "CON",
+   "section": "属性"
+  },
+  {
+   "en": "Intelligence",
+   "zh": "智力",
+   "note": "INT",
+   "section": "属性"
+  },
+  {
+   "en": "Wisdom",
+   "zh": "感知",
+   "note": "WIS",
+   "section": "属性"
+  },
+  {
+   "en": "Charisma",
+   "zh": "魅力",
+   "note": "CHA",
+   "section": "属性"
+  },
+  {
+   "en": "blinded",
+   "zh": "目盲",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "charmed",
+   "zh": "魅惑",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "deafened",
+   "zh": "耳聋",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "exhaustion",
+   "zh": "力竭",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "frightened",
+   "zh": "恐慌",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "grappled",
+   "zh": "擒抱",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "incapacitated",
+   "zh": "失能",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "invisible",
+   "zh": "隐形",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "paralyzed",
+   "zh": "麻痹",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "petrified",
+   "zh": "石化",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "poisoned",
+   "zh": "中毒",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "prone",
+   "zh": "倒地",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "restrained",
+   "zh": "束缚",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "stunned",
+   "zh": "震慑",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "surprised",
+   "zh": "受惊",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "unconscious",
+   "zh": "昏迷",
+   "note": "",
+   "section": "状态"
+  },
+  {
+   "en": "Acrobatics",
+   "zh": "杂技",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Animal Handling",
+   "zh": "驯兽",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Arcana",
+   "zh": "奥秘",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Athletics",
+   "zh": "运动",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Deception",
+   "zh": "欺瞒",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "History",
+   "zh": "历史",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Insight",
+   "zh": "洞悉",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Intimidation",
+   "zh": "威吓",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Investigation",
+   "zh": "调查",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Medicine",
+   "zh": "医药",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Nature",
+   "zh": "自然",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Perception",
+   "zh": "察觉",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Performance",
+   "zh": "表演",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Persuasion",
+   "zh": "游说",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Religion",
+   "zh": "宗教",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Sleight of Hand",
+   "zh": "巧手",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Stealth",
+   "zh": "隐匿",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "Survival",
+   "zh": "求生",
+   "note": "",
+   "section": "技能"
+  },
+  {
+   "en": "lineage",
+   "zh": "血统",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "heritage",
+   "zh": "传承",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Beastkin",
+   "zh": "兽裔",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Dwarf",
+   "zh": "矮人",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Elf",
+   "zh": "精灵",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Human",
+   "zh": "人类",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Orc",
+   "zh": "兽人",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Smallfolk",
+   "zh": "小族",
+   "note": "半身人与侏儒的统称",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Cosmopolitan",
+   "zh": "都市",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Cottage",
+   "zh": "村舍",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Diaspora",
+   "zh": "流散",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Grove",
+   "zh": "林间",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Nomadic",
+   "zh": "游牧",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Slayer",
+   "zh": "猎杀者",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Stone",
+   "zh": "岩石",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Supplicant",
+   "zh": "臣属",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Wildlands",
+   "zh": "荒野",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Gnome / Gnomish",
+   "zh": "侏儒（血脉）",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "Halfling",
+   "zh": "半身人",
+   "note": "",
+   "section": "血统与传承"
+  },
+  {
+   "en": "background",
+   "zh": "背景",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "talent",
+   "zh": "天赋",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Criminal",
+   "zh": "罪犯",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Scholar",
+   "zh": "学者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Soldier",
+   "zh": "士兵",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Arcanist",
+   "zh": "奥术师",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Combat Casting",
+   "zh": "战斗施法",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Elemental Savant",
+   "zh": "元素学者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Mental Fortitude",
+   "zh": "精神坚韧",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Psycanist",
+   "zh": "灵能师",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Ritualist",
+   "zh": "仪祭师",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "School Specialization",
+   "zh": "学派专精",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Spell Duelist",
+   "zh": "法术决斗者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Athletic",
+   "zh": "健儿",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Armor Expert",
+   "zh": "护甲专家",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Armor Training",
+   "zh": "护甲训练",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Combat Conditioning",
+   "zh": "战地锤炼",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Furious Charge",
+   "zh": "狂怒冲锋",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Hand To Hand",
+   "zh": "徒手格斗",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Heavy Weapon Mastery",
+   "zh": "重型武器精通",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Opportunist",
+   "zh": "机会主义者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Physical Fortitude",
+   "zh": "体魄坚韧",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Shield Mastery",
+   "zh": "盾牌精通",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Vanguard",
+   "zh": "先锋",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Weapon Discipline",
+   "zh": "武器专修",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Aware",
+   "zh": "警觉",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Covert",
+   "zh": "潜伏",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Dungeoneer",
+   "zh": "地城探索者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Far Traveler",
+   "zh": "远行者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Field Medic",
+   "zh": "战地医护",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Polyglot",
+   "zh": "多语者",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Quick",
+   "zh": "迅捷",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Scrutinous",
+   "zh": "明察",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Trade Skills",
+   "zh": "行业技能",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Touch of Luck",
+   "zh": "幸运之触",
+   "note": "",
+   "section": "背景与天赋"
+  },
+  {
+   "en": "Barbarian",
+   "zh": "野蛮人",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Bard",
+   "zh": "吟游诗人",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Cleric",
+   "zh": "牧师",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Druid",
+   "zh": "德鲁伊",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Fighter",
+   "zh": "战士",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Mechanist",
+   "zh": "机械师",
+   "note": "BFRD 新职业",
+   "section": "职业"
+  },
+  {
+   "en": "Monk",
+   "zh": "武僧",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Paladin",
+   "zh": "圣武士",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Ranger",
+   "zh": "游侠",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Rogue",
+   "zh": "盗贼",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Sorcerer",
+   "zh": "术士",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Warlock",
+   "zh": "邪术师",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Wizard",
+   "zh": "法师",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "spell",
+   "zh": "法术",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "cantrip",
+   "zh": "戏法",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "ritual",
+   "zh": "仪式",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spell slot",
+   "zh": "法术位",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spellbook",
+   "zh": "法术书",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spellcasting ability",
+   "zh": "施法属性",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spellcasting focus",
+   "zh": "施法法器",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "concentration",
+   "zh": "专注",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "sorcery points",
+   "zh": "术法点",
+   "note": "术士资源",
+   "section": "施法"
+  },
+  {
+   "en": "Arcane",
+   "zh": "奥术",
+   "note": "法术来源（spell source）",
+   "section": "施法"
+  },
+  {
+   "en": "Divine",
+   "zh": "神术",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "Primordial",
+   "zh": "原初",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "Wyrd",
+   "zh": "命运",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "abjuration",
+   "zh": "防护系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "conjuration",
+   "zh": "咒法系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "divination",
+   "zh": "预言系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "enchantment",
+   "zh": "附魔系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "evocation",
+   "zh": "塑能系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "illusion",
+   "zh": "幻术系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "necromancy",
+   "zh": "死灵系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "transmutation",
+   "zh": "变化系",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "attack roll",
+   "zh": "攻击检定",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "damage roll",
+   "zh": "伤害掷骰",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "melee attack",
+   "zh": "近战攻击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "ranged attack",
+   "zh": "远程攻击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "weapon attack",
+   "zh": "武器攻击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "unarmed strike",
+   "zh": "徒手打击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "action",
+   "zh": "动作",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "bonus action",
+   "zh": "附赠动作",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "reaction",
+   "zh": "反应",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "Dash",
+   "zh": "疾走",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "Dodge",
+   "zh": "闪避",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "Hide",
+   "zh": "躲藏",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "Ready",
+   "zh": "准备",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "Use an Object",
+   "zh": "使用物品",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "opportunity attack",
+   "zh": "借机攻击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "critical hit",
+   "zh": "重击",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "cover",
+   "zh": "掩护",
+   "note": "half/three-quarters/total = 半/四分之三/全身",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "dim light",
+   "zh": "微光",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "darkvision",
+   "zh": "黑暗视觉",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "passive Perception",
+   "zh": "被动察觉",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "passive Investigation",
+   "zh": "被动调查",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "grappling",
+   "zh": "擒抱",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "prone",
+   "zh": "倒地",
+   "note": "",
+   "section": "战斗与动作"
+  },
+  {
+   "en": "acid",
+   "zh": "强酸",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "bludgeoning",
+   "zh": "钝击",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "cold",
+   "zh": "寒冷",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "fire",
+   "zh": "火焰",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "force",
+   "zh": "力场",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "lightning",
+   "zh": "闪电",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "necrotic",
+   "zh": "死灵",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "piercing",
+   "zh": "穿刺",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "poison",
+   "zh": "毒素",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "psychic",
+   "zh": "心灵",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "radiant",
+   "zh": "光耀",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "slashing",
+   "zh": "斩击",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "thunder",
+   "zh": "雷鸣",
+   "note": "",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Light",
+   "zh": "轻型",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Heavy",
+   "zh": "重型",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Finesse",
+   "zh": "灵巧",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Two-Handed",
+   "zh": "双手",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Versatile",
+   "zh": "多用",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Thrown",
+   "zh": "投掷",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Reach",
+   "zh": "触及",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Ammunition",
+   "zh": "弹药",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "Loading",
+   "zh": "装填",
+   "note": "武器属性",
+   "section": "伤害类型与武器属性"
+  },
+  {
+   "en": "equipment",
+   "zh": "装备",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "armor",
+   "zh": "护甲",
+   "note": "light/medium/heavy = 轻甲/中甲/重甲",
+   "section": "装备与体型"
+  },
+  {
+   "en": "shield",
+   "zh": "盾牌",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "weapon",
+   "zh": "武器",
+   "note": "simple/martial = 简易/军用",
+   "section": "装备与体型"
+  },
+  {
+   "en": "tool",
+   "zh": "工具",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "improvised weapon",
+   "zh": "临时武器",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "AC",
+   "zh": "护甲等级",
+   "note": "Armor Class",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Tiny",
+   "zh": "微型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Small",
+   "zh": "小型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Medium",
+   "zh": "中型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Large",
+   "zh": "大型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Huge",
+   "zh": "巨型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Gargantuan",
+   "zh": "超巨型",
+   "note": "",
+   "section": "装备与体型"
+  },
+  {
+   "en": "Beast",
+   "zh": "野兽",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "Humanoid",
+   "zh": "类人生物",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "challenge rating",
+   "zh": "挑战等级",
+   "note": "CR",
+   "section": "生物"
+  },
+  {
+   "en": "resistance",
+   "zh": "抗性",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "immunity",
+   "zh": "免疫",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "vulnerability",
+   "zh": "易伤",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "hit point maximum",
+   "zh": "生命值上限",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "auto-fail",
+   "zh": "自动失败",
+   "note": "",
+   "section": "生物"
+  },
+  {
+   "en": "Common",
+   "zh": "通用语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Dwarvish",
+   "zh": "矮人语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Elvish",
+   "zh": "精灵语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Giant",
+   "zh": "巨人语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Gnomish",
+   "zh": "侏儒语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Halfling",
+   "zh": "半身人语",
+   "note": "语言义",
+   "section": "语言"
+  },
+  {
+   "en": "Orcish",
+   "zh": "兽人语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Draconic",
+   "zh": "龙语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Primordial",
+   "zh": "原初语",
+   "note": "语言义",
+   "section": "语言"
+  },
+  {
+   "en": "Sylvan",
+   "zh": "木族语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Undercommon",
+   "zh": "地底通用语",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "Thieves' Cant",
+   "zh": "盗贼黑话",
+   "note": "",
+   "section": "语言"
+  },
+  {
+   "en": "pantheon",
+   "zh": "神系",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "deity",
+   "zh": "神祇",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "domain",
+   "zh": "领域",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Death",
+   "zh": "死亡",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "War",
+   "zh": "战争",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Life",
+   "zh": "生命",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Light",
+   "zh": "光明",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Knowledge",
+   "zh": "知识",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Nature",
+   "zh": "自然",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Crafting",
+   "zh": "工艺",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Tempest",
+   "zh": "风暴",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "Trickery",
+   "zh": "诡术",
+   "note": "",
+   "section": "神系与领域"
+  },
+  {
+   "en": "ORC License",
+   "zh": "ORC 许可证",
+   "note": "Open RPG Creative License",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Licensed Material",
+   "zh": "授权材料",
+   "note": "",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Reserved Material",
+   "zh": "保留材料",
+   "note": "",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Attribution",
+   "zh": "署名",
+   "note": "",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Creative Commons Attribution 4.0 International License",
+   "zh": "知识共享署名 4.0 国际许可协议",
+   "note": "CC-BY 4.0",
+   "section": "许可与出版"
+  },
+  {
+   "en": "System Reference Document",
+   "zh": "系统参考文档",
+   "note": "SRD",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Wizards of the Coast",
+   "zh": "威世智",
+   "note": "",
+   "section": "许可与出版"
+  },
+  {
+   "en": "Kobold Press",
+   "zh": "狗头人出版社",
+   "note": "出版商名",
+   "section": "许可与出版"
+  },
+  {
+   "en": "round",
+   "zh": "轮",
+   "note": "约 6 秒",
+   "section": "游戏进行"
+  },
+  {
+   "en": "turn",
+   "zh": "回合",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "initiative",
+   "zh": "先攻",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "initiative order",
+   "zh": "先攻顺序",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "hazard",
+   "zh": "危险",
+   "note": "基于地点的威胁",
+   "section": "游戏进行"
+  },
+  {
+   "en": "trap",
+   "zh": "陷阱",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "trigger",
+   "zh": "触发条件",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "resolution",
+   "zh": "结算",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "encounter",
+   "zh": "遭遇",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "combat",
+   "zh": "战斗",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "contest",
+   "zh": "对抗检定",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "passive check",
+   "zh": "被动检定",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "group check",
+   "zh": "团体检定",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "score",
+   "zh": "分值",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "downtime",
+   "zh": "休整期",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "travel pace",
+   "zh": "行进速度",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "forced march",
+   "zh": "强行军",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "difficult terrain",
+   "zh": "困难地形",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "forced movement",
+   "zh": "强制移动",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "encumbrance",
+   "zh": "负重",
+   "note": "变体规则",
+   "section": "游戏进行"
+  },
+  {
+   "en": "slightly/heavily obscured",
+   "zh": "轻度/重度遮蔽",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "darkvision",
+   "zh": "黑暗视觉",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "keensense",
+   "zh": "敏锐感官",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "tremorsense",
+   "zh": "震颤感知",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "truesight",
+   "zh": "真实视觉",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "vision",
+   "zh": "视觉",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Material Plane",
+   "zh": "物质位面",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Ethereal Plane",
+   "zh": "以太位面",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Astral Plane",
+   "zh": "星界位面",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Transitive Planes",
+   "zh": "过渡位面",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Celestial",
+   "zh": "天界",
+   "note": "生物类型",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Fiend",
+   "zh": "邪魔",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Elemental",
+   "zh": "元素",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "portal",
+   "zh": "传送门",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "half/three-quarters/total cover",
+   "zh": "半掩护/四分之三掩护/全身掩护",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "critical miss",
+   "zh": "大失败",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "critical hit",
+   "zh": "重击",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "death save",
+   "zh": "死亡豁免",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "dying",
+   "zh": "濒死",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "stable",
+   "zh": "稳定",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "death",
+   "zh": "死亡",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "massive damage",
+   "zh": "巨量伤害",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "curse",
+   "zh": "诅咒",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "disease",
+   "zh": "疾病",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "dread",
+   "zh": "惊惧",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "poison",
+   "zh": "毒药",
+   "note": "物品义",
+   "section": "游戏进行"
+  },
+  {
+   "en": "starvation",
+   "zh": "饥饿",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "dehydration",
+   "zh": "脱水",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "suffocating",
+   "zh": "窒息",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "space",
+   "zh": "空间",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "reach",
+   "zh": "触及",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "range",
+   "zh": "射程",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "long range",
+   "zh": "远距离射程",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "close range",
+   "zh": "近距离",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "grapple",
+   "zh": "擒抱",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "shove",
+   "zh": "推挤",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "two weapon fighting",
+   "zh": "双武器战斗",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "Weapon Options",
+   "zh": "武器选项",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "mounted combat",
+   "zh": "骑乘战斗",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "mount",
+   "zh": "坐骑",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "underwater combat",
+   "zh": "水下战斗",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "carousing",
+   "zh": "狂欢",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "contact",
+   "zh": "人脉",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "favor",
+   "zh": "人情",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "crafting",
+   "zh": "制作",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "researching",
+   "zh": "研究",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "clue",
+   "zh": "线索",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "training",
+   "zh": "训练",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "working",
+   "zh": "工作",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "instructor",
+   "zh": "教导者",
+   "note": "",
+   "section": "游戏进行"
+  },
+  {
+   "en": "sp",
+   "zh": "银币",
+   "note": "silver pieces",
+   "section": "游戏进行"
+  },
+  {
+   "en": "cp",
+   "zh": "铜币",
+   "note": "copper pieces",
+   "section": "游戏进行"
+  },
+  {
+   "en": "ep",
+   "zh": "电子币",
+   "note": "electrum pieces",
+   "section": "游戏进行"
+  },
+  {
+   "en": "pp",
+   "zh": "铂金币",
+   "note": "platinum pieces",
+   "section": "游戏进行"
+  },
+  {
+   "en": "subclass",
+   "zh": "子职业",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Rage",
+   "zh": "狂暴",
+   "note": "野蛮人",
+   "section": "职业"
+  },
+  {
+   "en": "Reckless Attack",
+   "zh": "鲁莽攻击",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Channel Divinity",
+   "zh": "引导神力",
+   "note": "牧师/圣武士",
+   "section": "职业"
+  },
+  {
+   "en": "Wild Shape",
+   "zh": "野性变形",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Action Surge",
+   "zh": "动作如潮",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Second Wind",
+   "zh": "回气",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Ki",
+   "zh": "气",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Divine Smite",
+   "zh": "神圣惩击",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Favored Foe",
+   "zh": "宿敌",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Sneak Attack",
+   "zh": "偷袭",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Sorcery Points",
+   "zh": "术法点",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Metamagic",
+   "zh": "超魔法",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Eldritch Invocations",
+   "zh": "魔能祈唤",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Eldritch Blast",
+   "zh": "魔能爆",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Pact Boon",
+   "zh": "契约恩赐",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Pact Magic",
+   "zh": "契约魔法",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Arcanum",
+   "zh": "秘奥",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Multiattack",
+   "zh": "多重攻击",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Unarmored Defense",
+   "zh": "无甲防御",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "spell save DC",
+   "zh": "法术豁免难度等级",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "spell attack bonus",
+   "zh": "法术攻击加值",
+   "note": "",
+   "section": "职业"
+  },
+  {
+   "en": "Berserker",
+   "zh": "狂战士",
+   "note": "野蛮人",
+   "section": "子职业"
+  },
+  {
+   "en": "Wild Fury",
+   "zh": "狂野之怒",
+   "note": "野蛮人",
+   "section": "子职业"
+  },
+  {
+   "en": "Lore",
+   "zh": "学识",
+   "note": "吟游诗人",
+   "section": "子职业"
+  },
+  {
+   "en": "Victory",
+   "zh": "胜利",
+   "note": "吟游诗人",
+   "section": "子职业"
+  },
+  {
+   "en": "Life Domain",
+   "zh": "生命领域",
+   "note": "牧师",
+   "section": "子职业"
+  },
+  {
+   "en": "Light Domain",
+   "zh": "光明领域",
+   "note": "牧师",
+   "section": "子职业"
+  },
+  {
+   "en": "War Domain",
+   "zh": "战争领域",
+   "note": "牧师",
+   "section": "子职业"
+  },
+  {
+   "en": "Leaf",
+   "zh": "枝叶",
+   "note": "德鲁伊",
+   "section": "子职业"
+  },
+  {
+   "en": "Shifter",
+   "zh": "变形者",
+   "note": "德鲁伊",
+   "section": "子职业"
+  },
+  {
+   "en": "Spell Blade",
+   "zh": "法术之刃",
+   "note": "战士",
+   "section": "子职业"
+  },
+  {
+   "en": "Weapon Master",
+   "zh": "武器大师",
+   "note": "战士",
+   "section": "子职业"
+  },
+  {
+   "en": "Metallurgist",
+   "zh": "冶金师",
+   "note": "机械师",
+   "section": "子职业"
+  },
+  {
+   "en": "Spellwright",
+   "zh": "法术工匠",
+   "note": "机械师",
+   "section": "子职业"
+  },
+  {
+   "en": "Flickering Dark",
+   "zh": "闪烁之暗",
+   "note": "武僧",
+   "section": "子职业"
+  },
+  {
+   "en": "Open Hand",
+   "zh": "开手",
+   "note": "武僧",
+   "section": "子职业"
+  },
+  {
+   "en": "Devotion",
+   "zh": "虔诚",
+   "note": "圣武士",
+   "section": "子职业"
+  },
+  {
+   "en": "Justice",
+   "zh": "正义",
+   "note": "圣武士",
+   "section": "子职业"
+  },
+  {
+   "en": "Hunter",
+   "zh": "猎人",
+   "note": "游侠",
+   "section": "子职业"
+  },
+  {
+   "en": "Pack Master",
+   "zh": "兽群之主",
+   "note": "游侠",
+   "section": "子职业"
+  },
+  {
+   "en": "Enforcer",
+   "zh": "执法者",
+   "note": "盗贼",
+   "section": "子职业"
+  },
+  {
+   "en": "Thief",
+   "zh": "窃贼",
+   "note": "盗贼",
+   "section": "子职业"
+  },
+  {
+   "en": "Chaos",
+   "zh": "混沌",
+   "note": "术士",
+   "section": "子职业"
+  },
+  {
+   "en": "Draconic",
+   "zh": "龙裔",
+   "note": "术士",
+   "section": "子职业"
+  },
+  {
+   "en": "Fiend",
+   "zh": "邪魔",
+   "note": "邪术师",
+   "section": "子职业"
+  },
+  {
+   "en": "Reaper",
+   "zh": "收割者",
+   "note": "邪术师",
+   "section": "子职业"
+  },
+  {
+   "en": "Battle Mage",
+   "zh": "战斗法师",
+   "note": "法师",
+   "section": "子职业"
+  },
+  {
+   "en": "Cantrip Adept",
+   "zh": "戏法能手",
+   "note": "法师",
+   "section": "子职业"
+  },
+  {
+   "en": "currency",
+   "zh": "货币",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "copper (cp)",
+   "zh": "铜币",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "silver (sp)",
+   "zh": "银币",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "gold (gp)",
+   "zh": "金币",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "platinum (pp)",
+   "zh": "铂金币",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "armor",
+   "zh": "护甲",
+   "note": "light/medium/heavy = 轻甲/中甲/重甲",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "don / doff",
+   "zh": "穿上 / 脱下",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "barding",
+   "zh": "坐骑护甲",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Noisy",
+   "zh": "噪音",
+   "note": "护甲属性（property）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Cumbersome",
+   "zh": "笨重",
+   "note": "护甲属性（property）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Natural Materials",
+   "zh": "天然材料",
+   "note": "护甲属性（property）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "weapon",
+   "zh": "武器",
+   "note": "simple/martial = 简易/军用",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "improvised weapon",
+   "zh": "临时武器",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "weapon option",
+   "zh": "武器选项",
+   "note": "Bash 猛击、Disarm 缴械、Hamstring 断筋、Pinning Shot 钉射、Pull 拖拽、Ricochet Shot 跳弹射击、Trip 绊摔",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "special gear",
+   "zh": "特殊装备",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "adventuring gear",
+   "zh": "冒险装备",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "tool kit",
+   "zh": "工具套装",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "gaming set",
+   "zh": "游戏套组",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "mount",
+   "zh": "坐骑",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "drawn object",
+   "zh": "拖拽物件",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "saddle",
+   "zh": "鞍具",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "hireling",
+   "zh": "雇工",
+   "note": "skilled/untrained = 熟练/未受训雇工",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "lodging",
+   "zh": "住宿",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "vehicle",
+   "zh": "载具",
+   "note": "land/water = 陆上/水上",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "damage threshold",
+   "zh": "伤害阈值",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Vehicle Resilience",
+   "zh": "载具韧性",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "crew",
+   "zh": "船员",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "cargo capacity",
+   "zh": "货物容量",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "patch job",
+   "zh": "临时修补",
+   "note": "载具修理",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "replace parts",
+   "zh": "更换部件",
+   "note": "载具修理",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "magic item",
+   "zh": "魔法物品",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "attunement",
+   "zh": "调谐",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "attune",
+   "zh": "调谐（动词）",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "charges",
+   "zh": "充能",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "command word",
+   "zh": "命令词",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "rarity",
+   "zh": "稀有度",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Common",
+   "zh": "普通",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Uncommon",
+   "zh": "非普通",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Rare",
+   "zh": "稀有",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Very Rare",
+   "zh": "极珍稀",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Legendary",
+   "zh": "传奇",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "Priceless",
+   "zh": "无价",
+   "note": "稀有度（rarity）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "wand",
+   "zh": "魔杖",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "staff",
+   "zh": "法杖",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "rod",
+   "zh": "权杖",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "scroll",
+   "zh": "卷轴",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "potion",
+   "zh": "药水",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "wondrous item",
+   "zh": "奇物",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "curse",
+   "zh": "诅咒",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "retributive strike",
+   "zh": "报复打击",
+   "note": "法杖（staff）",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "extradimensional space",
+   "zh": "异次元空间",
+   "note": "",
+   "section": "装备与魔法物品"
+  },
+  {
+   "en": "casting time",
+   "zh": "施放时间",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "bonus action / reaction",
+   "zh": "附赠动作 / 反应",
+   "note": "施放时间（casting time）类型",
+   "section": "施法"
+  },
+  {
+   "en": "range",
+   "zh": "射程",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "self",
+   "zh": "自身",
+   "note": "射程（range）值",
+   "section": "施法"
+  },
+  {
+   "en": "touch",
+   "zh": "接触",
+   "note": "射程（range）值",
+   "section": "施法"
+  },
+  {
+   "en": "area of effect",
+   "zh": "效果区域",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "point of origin",
+   "zh": "起始点",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "cone / cube / cylinder / line / sphere",
+   "zh": "锥形 / 立方体 / 柱形 / 线形 / 球形",
+   "note": "效果区域（area of effect）形状",
+   "section": "施法"
+  },
+  {
+   "en": "components",
+   "zh": "成分",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "verbal (V)",
+   "zh": "言语（V）",
+   "note": "成分（component）",
+   "section": "施法"
+  },
+  {
+   "en": "somatic (S)",
+   "zh": "姿势（S）",
+   "note": "成分（component）",
+   "section": "施法"
+  },
+  {
+   "en": "material (M)",
+   "zh": "材料（M）",
+   "note": "成分（component）",
+   "section": "施法"
+  },
+  {
+   "en": "duration",
+   "zh": "持续时间",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "instantaneous",
+   "zh": "立即",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "concentration",
+   "zh": "专注",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "concentration check",
+   "zh": "专注检定",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "target",
+   "zh": "目标",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "at higher circles",
+   "zh": "更高环阶",
+   "note": "法术（spell）升级段落",
+   "section": "施法"
+  },
+  {
+   "en": "spell attack",
+   "zh": "法术攻击",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spell attack roll",
+   "zh": "法术攻击掷骰",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "known spells",
+   "zh": "已知法术",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "prepared spells",
+   "zh": "准备法术",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "spell source",
+   "zh": "法术来源",
+   "note": "Arcane/Divine/Primordial/Wyrd",
+   "section": "施法"
+  },
+  {
+   "en": "elemental damage type",
+   "zh": "元素伤害类型",
+   "note": "强酸/寒冷/火焰/闪电/雷鸣",
+   "section": "施法"
+  },
+  {
+   "en": "material component cost",
+   "zh": "材料成分花费",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "casting in armor",
+   "zh": "穿甲施法",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "combining magical effects",
+   "zh": "组合魔法效果",
+   "note": "",
+   "section": "施法"
+  },
+  {
+   "en": "stat block",
+   "zh": "数据块",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Armor Class (AC)",
+   "zh": "护甲等级（AC）",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Hit Points (HP)",
+   "zh": "生命值（HP）",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "HP maximum",
+   "zh": "生命值上限",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Senses",
+   "zh": "感官",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "darkvision",
+   "zh": "黑暗视觉",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "keensense",
+   "zh": "敏锐感官",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "tremorsense",
+   "zh": "震颤感知",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "truesight",
+   "zh": "真实视觉",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "telepathy",
+   "zh": "心灵感应",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "telepathically",
+   "zh": "通过心灵感应",
+   "note": "副词形",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "passive Perception",
+   "zh": "被动察觉",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Languages",
+   "zh": "语言",
+   "note": "数据块行",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Challenge Rating (CR)",
+   "zh": "挑战等级（CR）",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "legendary creature",
+   "zh": "传奇生物",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "legendary action",
+   "zh": "传奇动作",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "lair action",
+   "zh": "巢穴动作",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "regional effect",
+   "zh": "区域效果",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Recharge N–M",
+   "zh": "充能 N-M",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Recharge Special",
+   "zh": "充能特殊",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Multiattack",
+   "zh": "多重攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Melee Weapon Attack",
+   "zh": "近战武器攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Ranged Weapon Attack",
+   "zh": "远程武器攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Melee or Ranged Weapon Attack",
+   "zh": "近战或远程武器攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Melee Spell Attack",
+   "zh": "近战法术攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Ranged Spell Attack",
+   "zh": "远程法术攻击",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Hit",
+   "zh": "命中",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "escape DC",
+   "zh": "逃脱难度等级",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Spellcasting",
+   "zh": "施法",
+   "note": "数据块动作",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "At will / 3/day each / 1/day",
+   "zh": "随意 / 每日各 3 次 / 每日 1 次",
+   "note": "",
+   "section": "怪物：数据块与规则"
+  },
+  {
+   "en": "Aberration",
+   "zh": "异怪",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Animal",
+   "zh": "动物",
+   "note": "括号标签",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Beast",
+   "zh": "野兽",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Celestial",
+   "zh": "天界生物",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Construct",
+   "zh": "构装体",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Dragon",
+   "zh": "龙",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Elemental",
+   "zh": "元素",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Fey",
+   "zh": "妖精",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Fiend",
+   "zh": "邪魔",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Giant",
+   "zh": "巨人",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Humanoid",
+   "zh": "类人生物",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Monstrosity",
+   "zh": "异怪兽",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Ooze",
+   "zh": "泥怪",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Outsider",
+   "zh": "异界生物",
+   "note": "括号标签",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Plant",
+   "zh": "植物",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Shapechanger",
+   "zh": "变形者",
+   "note": "括号标签",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Swarm of Tiny …",
+   "zh": "……集群",
+   "note": "类型行",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Undead",
+   "zh": "亡灵",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Tiny / Small / Medium / Large / Huge / Gargantuan",
+   "zh": "微型 / 小型 / 中型 / 大型 / 巨型 / 超巨型",
+   "note": "",
+   "section": "怪物：生物类型与体型"
+  },
+  {
+   "en": "Amphibious",
+   "zh": "两栖",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Change Shape",
+   "zh": "变形",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Construct Nature",
+   "zh": "构装体本质",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Elemental Nature",
+   "zh": "元素本质",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "False Appearance",
+   "zh": "虚假外观",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Fey Ancestry",
+   "zh": "妖精血统",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Frightful Presence",
+   "zh": "恐怖威仪",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Giant Attributes",
+   "zh": "巨人特质",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Hardy",
+   "zh": "坚韧",
+   "note": "恐龙特性",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Heightened Senses / Sight / Smell / Hearing",
+   "zh": "强化感官 / 视觉 / 嗅觉 / 听觉",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Hold Breath",
+   "zh": "屏息",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Immutable Form",
+   "zh": "不变形态",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Legendary Resistance",
+   "zh": "传奇抗性",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Magic Resistance",
+   "zh": "魔法抗性",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Magic Weapons",
+   "zh": "魔法武器",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Mimicry",
+   "zh": "拟声",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Monstrosity Resilience",
+   "zh": "异怪兽韧性",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Multiple Heads",
+   "zh": "多头",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Ooze Nature",
+   "zh": "泥怪本质",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Pack Tactics",
+   "zh": "群体战术",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Pounce",
+   "zh": "扑击",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Regeneration",
+   "zh": "再生",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Rejuvenation",
+   "zh": "复生",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Reckless",
+   "zh": "鲁莽",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Relentless",
+   "zh": "不屈",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Siege Monster / Siege Behemoth",
+   "zh": "攻城怪物 / 攻城巨兽",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Spider Climb",
+   "zh": "蛛行",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Stench",
+   "zh": "恶臭",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Sunlight Sensitivity",
+   "zh": "阳光敏感",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Swarm",
+   "zh": "集群",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Trampling Charge",
+   "zh": "践踏冲锋",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Undead Fortitude",
+   "zh": "亡灵坚韧",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Undead Nature",
+   "zh": "亡灵本质",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Wakeful",
+   "zh": "清醒",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Web Sense / Web Walker",
+   "zh": "蛛网感知 / 蛛网行走",
+   "note": "",
+   "section": "怪物：常用特性"
+  },
+  {
+   "en": "Aberrant Resilience",
+   "zh": "异怪韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Angelic Resilience",
+   "zh": "天使韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Celestial Resilience",
+   "zh": "天界韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Construct Resilience",
+   "zh": "构装体韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Demonic Resilience",
+   "zh": "恶魔韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Devilish Resilience",
+   "zh": "魔鬼韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Duergar Resilience",
+   "zh": "灰矮人韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Elemental Resilience",
+   "zh": "元素韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Fey Resilience",
+   "zh": "妖精韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Flesh Golem Resilience",
+   "zh": "血肉魔像韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Golem Resilience",
+   "zh": "魔像韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Ooze Resilience",
+   "zh": "泥怪韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Plant Resilience",
+   "zh": "植物韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Swarm Resilience",
+   "zh": "集群韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Undead Resilience",
+   "zh": "亡灵韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Vampiric Resilience",
+   "zh": "吸血鬼韧性",
+   "note": "",
+   "section": "怪物：韧性特质"
+  },
+  {
+   "en": "Drider",
+   "zh": "蛛化精灵",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Dryad",
+   "zh": "树精",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Dretch / Lemure",
+   "zh": "怯魔 / 劣魔",
+   "note": "避免「劣魔」撞名",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Duergar",
+   "zh": "灰矮人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Ettercap",
+   "zh": "蛛人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Gibbering Mouther",
+   "zh": "呓语魔",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Gelatinous Cube",
+   "zh": "凝胶方块",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Gargoyle",
+   "zh": "石像鬼",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Ghast",
+   "zh": "尸妖",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Ghoul",
+   "zh": "食尸鬼",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Hag（Green / Night / Sea / Ambush）",
+   "zh": "鬼婆（绿鬼婆 / 夜鬼婆 / 海鬼婆 / 伏击鬼婆）",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Hippocampus / Seahorse",
+   "zh": "海马兽 / 海马",
+   "note": "区分原生物与动物",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Kraken",
+   "zh": "海妖",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Lamia",
+   "zh": "拉弥亚",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Lich",
+   "zh": "巫妖",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Lizardfolk",
+   "zh": "蜥蜴人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Manticore",
+   "zh": "蝎尾狮",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Merfolk / Merrow",
+   "zh": "人鱼 / 海魔",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Mimic",
+   "zh": "拟形怪",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Minotaur",
+   "zh": "牛头人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Mummy Lord",
+   "zh": "木乃伊领主",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Mycolid",
+   "zh": "菌人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Naga",
+   "zh": "娜迦",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Owlbear",
+   "zh": "枭熊",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Pit Fiend",
+   "zh": "深狱炼魔",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Pseudodragon",
+   "zh": "伪龙",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Purple Worm",
+   "zh": "紫虫",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Rakshasa",
+   "zh": "罗刹",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Roper",
+   "zh": "石绳怪",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Rust Monster",
+   "zh": "锈蚀怪",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Sahuagin",
+   "zh": "鲨鱼人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Sphinx（Androsphinx / Gynosphinx）",
+   "zh": "斯芬克斯（公斯芬克斯 / 母斯芬克斯）",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Tarrasque",
+   "zh": "泰拉斯奎",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Wight",
+   "zh": "尸鬼",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Will-o'-Wisp",
+   "zh": "鬼火",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Worg / Dire Wolf",
+   "zh": "座狼 / 恐狼",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Wererat / Werewolf / Werebear / Wereboar / Weretiger",
+   "zh": "鼠人 / 狼人 / 熊人 / 野猪人 / 虎人",
+   "note": "",
+   "section": "怪物：关键定名"
+  },
+  {
+   "en": "Zombie",
+   "zh": "僵尸",
+   "note": "",
+   "section": "怪物：关键定名"
+  }
+ ],
+ "en_zh": {
+  "ability score": "属性值",
+  "ability modifier": "属性调整值",
+  "advantage": "优势",
+  "disadvantage": "劣势",
+  "check": "检定",
+  "ability check": "属性检定",
+  "save": "豁免",
+  "dc": "难度等级",
+  "pb": "熟练加值",
+  "proficiency": "熟练（项）",
+  "skill": "技能",
+  "proficiency bonus": "熟练加值",
+  "gm": "游戏主持人",
+  "pc": "玩家角色",
+  "xp": "经验值",
+  "level": "等级",
+  "class level": "职业等级",
+  "character level": "角色等级",
+  "hit points": "生命值",
+  "temporary hp": "临时生命值",
+  "hit die / hit dice": "生命骰",
+  "short rest": "短休",
+  "long rest": "长休",
+  "luck": "幸运",
+  "doom": "厄运",
+  "milestone": "里程碑",
+  "multiclassing": "多职业",
+  "circle": "环阶",
+  "tag": "标签",
+  "creature": "生物",
+  "cr": "挑战等级",
+  "gp": "金币",
+  "strength": "力量",
+  "dexterity": "敏捷",
+  "constitution": "体质",
+  "intelligence": "智力",
+  "wisdom": "感知",
+  "charisma": "魅力",
+  "blinded": "目盲",
+  "charmed": "魅惑",
+  "deafened": "耳聋",
+  "exhaustion": "力竭",
+  "frightened": "恐慌",
+  "grappled": "擒抱",
+  "incapacitated": "失能",
+  "invisible": "隐形",
+  "paralyzed": "麻痹",
+  "petrified": "石化",
+  "poisoned": "中毒",
+  "prone": "倒地",
+  "restrained": "束缚",
+  "stunned": "震慑",
+  "surprised": "受惊",
+  "unconscious": "昏迷",
+  "acrobatics": "杂技",
+  "animal handling": "驯兽",
+  "arcana": "奥秘",
+  "athletics": "运动",
+  "deception": "欺瞒",
+  "history": "历史",
+  "insight": "洞悉",
+  "intimidation": "威吓",
+  "investigation": "调查",
+  "medicine": "医药",
+  "nature": "自然",
+  "perception": "察觉",
+  "performance": "表演",
+  "persuasion": "游说",
+  "religion": "宗教",
+  "sleight of hand": "巧手",
+  "stealth": "隐匿",
+  "survival": "求生",
+  "lineage": "血统",
+  "heritage": "传承",
+  "beastkin": "兽裔",
+  "dwarf": "矮人",
+  "elf": "精灵",
+  "human": "人类",
+  "orc": "兽人",
+  "smallfolk": "小族",
+  "cosmopolitan": "都市",
+  "cottage": "村舍",
+  "diaspora": "流散",
+  "grove": "林间",
+  "nomadic": "游牧",
+  "slayer": "猎杀者",
+  "stone": "岩石",
+  "supplicant": "臣属",
+  "wildlands": "荒野",
+  "gnome / gnomish": "侏儒（血脉）",
+  "halfling": "半身人",
+  "background": "背景",
+  "talent": "天赋",
+  "criminal": "罪犯",
+  "scholar": "学者",
+  "soldier": "士兵",
+  "arcanist": "奥术师",
+  "combat casting": "战斗施法",
+  "elemental savant": "元素学者",
+  "mental fortitude": "精神坚韧",
+  "psycanist": "灵能师",
+  "ritualist": "仪祭师",
+  "school specialization": "学派专精",
+  "spell duelist": "法术决斗者",
+  "athletic": "健儿",
+  "armor expert": "护甲专家",
+  "armor training": "护甲训练",
+  "combat conditioning": "战地锤炼",
+  "furious charge": "狂怒冲锋",
+  "hand to hand": "徒手格斗",
+  "heavy weapon mastery": "重型武器精通",
+  "opportunist": "机会主义者",
+  "physical fortitude": "体魄坚韧",
+  "shield mastery": "盾牌精通",
+  "vanguard": "先锋",
+  "weapon discipline": "武器专修",
+  "aware": "警觉",
+  "covert": "潜伏",
+  "dungeoneer": "地城探索者",
+  "far traveler": "远行者",
+  "field medic": "战地医护",
+  "polyglot": "多语者",
+  "quick": "迅捷",
+  "scrutinous": "明察",
+  "trade skills": "行业技能",
+  "touch of luck": "幸运之触",
+  "barbarian": "野蛮人",
+  "bard": "吟游诗人",
+  "cleric": "牧师",
+  "druid": "德鲁伊",
+  "fighter": "战士",
+  "mechanist": "机械师",
+  "monk": "武僧",
+  "paladin": "圣武士",
+  "ranger": "游侠",
+  "rogue": "盗贼",
+  "sorcerer": "术士",
+  "warlock": "邪术师",
+  "wizard": "法师",
+  "spell": "法术",
+  "cantrip": "戏法",
+  "ritual": "仪式",
+  "spell slot": "法术位",
+  "spellbook": "法术书",
+  "spellcasting ability": "施法属性",
+  "spellcasting focus": "施法法器",
+  "concentration": "专注",
+  "sorcery points": "术法点",
+  "arcane": "奥术",
+  "divine": "神术",
+  "primordial": "原初",
+  "wyrd": "命运",
+  "abjuration": "防护系",
+  "conjuration": "咒法系",
+  "divination": "预言系",
+  "enchantment": "附魔系",
+  "evocation": "塑能系",
+  "illusion": "幻术系",
+  "necromancy": "死灵系",
+  "transmutation": "变化系",
+  "attack roll": "攻击检定",
+  "damage roll": "伤害掷骰",
+  "melee attack": "近战攻击",
+  "ranged attack": "远程攻击",
+  "weapon attack": "武器攻击",
+  "unarmed strike": "徒手打击",
+  "action": "动作",
+  "bonus action": "附赠动作",
+  "reaction": "反应",
+  "dash": "疾走",
+  "dodge": "闪避",
+  "hide": "躲藏",
+  "ready": "准备",
+  "use an object": "使用物品",
+  "opportunity attack": "借机攻击",
+  "critical hit": "重击",
+  "cover": "掩护",
+  "dim light": "微光",
+  "darkvision": "黑暗视觉",
+  "passive perception": "被动察觉",
+  "passive investigation": "被动调查",
+  "grappling": "擒抱",
+  "acid": "强酸",
+  "bludgeoning": "钝击",
+  "cold": "寒冷",
+  "fire": "火焰",
+  "force": "力场",
+  "lightning": "闪电",
+  "necrotic": "死灵",
+  "piercing": "穿刺",
+  "poison": "毒素",
+  "psychic": "心灵",
+  "radiant": "光耀",
+  "slashing": "斩击",
+  "thunder": "雷鸣",
+  "light": "轻型",
+  "heavy": "重型",
+  "finesse": "灵巧",
+  "two-handed": "双手",
+  "versatile": "多用",
+  "thrown": "投掷",
+  "reach": "触及",
+  "ammunition": "弹药",
+  "loading": "装填",
+  "equipment": "装备",
+  "armor": "护甲",
+  "shield": "盾牌",
+  "weapon": "武器",
+  "tool": "工具",
+  "improvised weapon": "临时武器",
+  "ac": "护甲等级",
+  "tiny": "微型",
+  "small": "小型",
+  "medium": "中型",
+  "large": "大型",
+  "huge": "巨型",
+  "gargantuan": "超巨型",
+  "beast": "野兽",
+  "humanoid": "类人生物",
+  "challenge rating": "挑战等级",
+  "resistance": "抗性",
+  "immunity": "免疫",
+  "vulnerability": "易伤",
+  "hit point maximum": "生命值上限",
+  "auto-fail": "自动失败",
+  "common": "通用语",
+  "dwarvish": "矮人语",
+  "elvish": "精灵语",
+  "giant": "巨人语",
+  "gnomish": "侏儒语",
+  "orcish": "兽人语",
+  "draconic": "龙语",
+  "sylvan": "木族语",
+  "undercommon": "地底通用语",
+  "thieves' cant": "盗贼黑话",
+  "pantheon": "神系",
+  "deity": "神祇",
+  "domain": "领域",
+  "death": "死亡",
+  "war": "战争",
+  "life": "生命",
+  "knowledge": "知识",
+  "crafting": "工艺",
+  "tempest": "风暴",
+  "trickery": "诡术",
+  "orc license": "ORC 许可证",
+  "licensed material": "授权材料",
+  "reserved material": "保留材料",
+  "attribution": "署名",
+  "creative commons attribution 4.0 international license": "知识共享署名 4.0 国际许可协议",
+  "system reference document": "系统参考文档",
+  "wizards of the coast": "威世智",
+  "kobold press": "狗头人出版社",
+  "round": "轮",
+  "turn": "回合",
+  "initiative": "先攻",
+  "initiative order": "先攻顺序",
+  "hazard": "危险",
+  "trap": "陷阱",
+  "trigger": "触发条件",
+  "resolution": "结算",
+  "encounter": "遭遇",
+  "combat": "战斗",
+  "contest": "对抗检定",
+  "passive check": "被动检定",
+  "group check": "团体检定",
+  "score": "分值",
+  "downtime": "休整期",
+  "travel pace": "行进速度",
+  "forced march": "强行军",
+  "difficult terrain": "困难地形",
+  "forced movement": "强制移动",
+  "encumbrance": "负重",
+  "slightly/heavily obscured": "轻度/重度遮蔽",
+  "keensense": "敏锐感官",
+  "tremorsense": "震颤感知",
+  "truesight": "真实视觉",
+  "vision": "视觉",
+  "material plane": "物质位面",
+  "ethereal plane": "以太位面",
+  "astral plane": "星界位面",
+  "transitive planes": "过渡位面",
+  "celestial": "天界",
+  "fiend": "邪魔",
+  "elemental": "元素",
+  "portal": "传送门",
+  "half/three-quarters/total cover": "半掩护/四分之三掩护/全身掩护",
+  "critical miss": "大失败",
+  "death save": "死亡豁免",
+  "dying": "濒死",
+  "stable": "稳定",
+  "massive damage": "巨量伤害",
+  "curse": "诅咒",
+  "disease": "疾病",
+  "dread": "惊惧",
+  "starvation": "饥饿",
+  "dehydration": "脱水",
+  "suffocating": "窒息",
+  "space": "空间",
+  "range": "射程",
+  "long range": "远距离射程",
+  "close range": "近距离",
+  "grapple": "擒抱",
+  "shove": "推挤",
+  "two weapon fighting": "双武器战斗",
+  "weapon options": "武器选项",
+  "mounted combat": "骑乘战斗",
+  "mount": "坐骑",
+  "underwater combat": "水下战斗",
+  "carousing": "狂欢",
+  "contact": "人脉",
+  "favor": "人情",
+  "researching": "研究",
+  "clue": "线索",
+  "training": "训练",
+  "working": "工作",
+  "instructor": "教导者",
+  "sp": "银币",
+  "cp": "铜币",
+  "ep": "电子币",
+  "pp": "铂金币",
+  "subclass": "子职业",
+  "rage": "狂暴",
+  "reckless attack": "鲁莽攻击",
+  "channel divinity": "引导神力",
+  "wild shape": "野性变形",
+  "action surge": "动作如潮",
+  "second wind": "回气",
+  "ki": "气",
+  "divine smite": "神圣惩击",
+  "favored foe": "宿敌",
+  "sneak attack": "偷袭",
+  "metamagic": "超魔法",
+  "eldritch invocations": "魔能祈唤",
+  "eldritch blast": "魔能爆",
+  "pact boon": "契约恩赐",
+  "pact magic": "契约魔法",
+  "arcanum": "秘奥",
+  "multiattack": "多重攻击",
+  "unarmored defense": "无甲防御",
+  "spell save dc": "法术豁免难度等级",
+  "spell attack bonus": "法术攻击加值",
+  "berserker": "狂战士",
+  "wild fury": "狂野之怒",
+  "lore": "学识",
+  "victory": "胜利",
+  "life domain": "生命领域",
+  "light domain": "光明领域",
+  "war domain": "战争领域",
+  "leaf": "枝叶",
+  "shifter": "变形者",
+  "spell blade": "法术之刃",
+  "weapon master": "武器大师",
+  "metallurgist": "冶金师",
+  "spellwright": "法术工匠",
+  "flickering dark": "闪烁之暗",
+  "open hand": "开手",
+  "devotion": "虔诚",
+  "justice": "正义",
+  "hunter": "猎人",
+  "pack master": "兽群之主",
+  "enforcer": "执法者",
+  "thief": "窃贼",
+  "chaos": "混沌",
+  "reaper": "收割者",
+  "battle mage": "战斗法师",
+  "cantrip adept": "戏法能手",
+  "currency": "货币",
+  "copper (cp)": "铜币",
+  "silver (sp)": "银币",
+  "gold (gp)": "金币",
+  "platinum (pp)": "铂金币",
+  "don / doff": "穿上 / 脱下",
+  "barding": "坐骑护甲",
+  "noisy": "噪音",
+  "cumbersome": "笨重",
+  "natural materials": "天然材料",
+  "weapon option": "武器选项",
+  "special gear": "特殊装备",
+  "adventuring gear": "冒险装备",
+  "tool kit": "工具套装",
+  "gaming set": "游戏套组",
+  "drawn object": "拖拽物件",
+  "saddle": "鞍具",
+  "hireling": "雇工",
+  "lodging": "住宿",
+  "vehicle": "载具",
+  "damage threshold": "伤害阈值",
+  "vehicle resilience": "载具韧性",
+  "crew": "船员",
+  "cargo capacity": "货物容量",
+  "patch job": "临时修补",
+  "replace parts": "更换部件",
+  "magic item": "魔法物品",
+  "attunement": "调谐",
+  "attune": "调谐（动词）",
+  "charges": "充能",
+  "command word": "命令词",
+  "rarity": "稀有度",
+  "uncommon": "非普通",
+  "rare": "稀有",
+  "very rare": "极珍稀",
+  "legendary": "传奇",
+  "priceless": "无价",
+  "wand": "魔杖",
+  "staff": "法杖",
+  "rod": "权杖",
+  "scroll": "卷轴",
+  "potion": "药水",
+  "wondrous item": "奇物",
+  "retributive strike": "报复打击",
+  "extradimensional space": "异次元空间",
+  "casting time": "施放时间",
+  "bonus action / reaction": "附赠动作 / 反应",
+  "self": "自身",
+  "touch": "接触",
+  "area of effect": "效果区域",
+  "point of origin": "起始点",
+  "cone / cube / cylinder / line / sphere": "锥形 / 立方体 / 柱形 / 线形 / 球形",
+  "components": "成分",
+  "verbal (v)": "言语（V）",
+  "somatic (s)": "姿势（S）",
+  "material (m)": "材料（M）",
+  "duration": "持续时间",
+  "instantaneous": "立即",
+  "concentration check": "专注检定",
+  "target": "目标",
+  "at higher circles": "更高环阶",
+  "spell attack": "法术攻击",
+  "spell attack roll": "法术攻击掷骰",
+  "known spells": "已知法术",
+  "prepared spells": "准备法术",
+  "spell source": "法术来源",
+  "elemental damage type": "元素伤害类型",
+  "material component cost": "材料成分花费",
+  "casting in armor": "穿甲施法",
+  "combining magical effects": "组合魔法效果",
+  "stat block": "数据块",
+  "armor class (ac)": "护甲等级（AC）",
+  "hit points (hp)": "生命值（HP）",
+  "hp maximum": "生命值上限",
+  "senses": "感官",
+  "telepathy": "心灵感应",
+  "telepathically": "通过心灵感应",
+  "languages": "语言",
+  "challenge rating (cr)": "挑战等级（CR）",
+  "legendary creature": "传奇生物",
+  "legendary action": "传奇动作",
+  "lair action": "巢穴动作",
+  "regional effect": "区域效果",
+  "recharge n–m": "充能 N-M",
+  "recharge special": "充能特殊",
+  "melee weapon attack": "近战武器攻击",
+  "ranged weapon attack": "远程武器攻击",
+  "melee or ranged weapon attack": "近战或远程武器攻击",
+  "melee spell attack": "近战法术攻击",
+  "ranged spell attack": "远程法术攻击",
+  "hit": "命中",
+  "escape dc": "逃脱难度等级",
+  "spellcasting": "施法",
+  "at will / 3/day each / 1/day": "随意 / 每日各 3 次 / 每日 1 次",
+  "aberration": "异怪",
+  "animal": "动物",
+  "construct": "构装体",
+  "dragon": "龙",
+  "fey": "妖精",
+  "monstrosity": "异怪兽",
+  "ooze": "泥怪",
+  "outsider": "异界生物",
+  "plant": "植物",
+  "shapechanger": "变形者",
+  "swarm of tiny …": "……集群",
+  "undead": "亡灵",
+  "tiny / small / medium / large / huge / gargantuan": "微型 / 小型 / 中型 / 大型 / 巨型 / 超巨型",
+  "amphibious": "两栖",
+  "change shape": "变形",
+  "construct nature": "构装体本质",
+  "elemental nature": "元素本质",
+  "false appearance": "虚假外观",
+  "fey ancestry": "妖精血统",
+  "frightful presence": "恐怖威仪",
+  "giant attributes": "巨人特质",
+  "hardy": "坚韧",
+  "heightened senses / sight / smell / hearing": "强化感官 / 视觉 / 嗅觉 / 听觉",
+  "hold breath": "屏息",
+  "immutable form": "不变形态",
+  "legendary resistance": "传奇抗性",
+  "magic resistance": "魔法抗性",
+  "magic weapons": "魔法武器",
+  "mimicry": "拟声",
+  "monstrosity resilience": "异怪兽韧性",
+  "multiple heads": "多头",
+  "ooze nature": "泥怪本质",
+  "pack tactics": "群体战术",
+  "pounce": "扑击",
+  "regeneration": "再生",
+  "rejuvenation": "复生",
+  "reckless": "鲁莽",
+  "relentless": "不屈",
+  "siege monster / siege behemoth": "攻城怪物 / 攻城巨兽",
+  "spider climb": "蛛行",
+  "stench": "恶臭",
+  "sunlight sensitivity": "阳光敏感",
+  "swarm": "集群",
+  "trampling charge": "践踏冲锋",
+  "undead fortitude": "亡灵坚韧",
+  "undead nature": "亡灵本质",
+  "wakeful": "清醒",
+  "web sense / web walker": "蛛网感知 / 蛛网行走",
+  "aberrant resilience": "异怪韧性",
+  "angelic resilience": "天使韧性",
+  "celestial resilience": "天界韧性",
+  "construct resilience": "构装体韧性",
+  "demonic resilience": "恶魔韧性",
+  "devilish resilience": "魔鬼韧性",
+  "duergar resilience": "灰矮人韧性",
+  "elemental resilience": "元素韧性",
+  "fey resilience": "妖精韧性",
+  "flesh golem resilience": "血肉魔像韧性",
+  "golem resilience": "魔像韧性",
+  "ooze resilience": "泥怪韧性",
+  "plant resilience": "植物韧性",
+  "swarm resilience": "集群韧性",
+  "undead resilience": "亡灵韧性",
+  "vampiric resilience": "吸血鬼韧性",
+  "drider": "蛛化精灵",
+  "dryad": "树精",
+  "dretch / lemure": "怯魔 / 劣魔",
+  "duergar": "灰矮人",
+  "ettercap": "蛛人",
+  "gibbering mouther": "呓语魔",
+  "gelatinous cube": "凝胶方块",
+  "gargoyle": "石像鬼",
+  "ghast": "尸妖",
+  "ghoul": "食尸鬼",
+  "hag（green / night / sea / ambush）": "鬼婆（绿鬼婆 / 夜鬼婆 / 海鬼婆 / 伏击鬼婆）",
+  "hippocampus / seahorse": "海马兽 / 海马",
+  "kraken": "海妖",
+  "lamia": "拉弥亚",
+  "lich": "巫妖",
+  "lizardfolk": "蜥蜴人",
+  "manticore": "蝎尾狮",
+  "merfolk / merrow": "人鱼 / 海魔",
+  "mimic": "拟形怪",
+  "minotaur": "牛头人",
+  "mummy lord": "木乃伊领主",
+  "mycolid": "菌人",
+  "naga": "娜迦",
+  "owlbear": "枭熊",
+  "pit fiend": "深狱炼魔",
+  "pseudodragon": "伪龙",
+  "purple worm": "紫虫",
+  "rakshasa": "罗刹",
+  "roper": "石绳怪",
+  "rust monster": "锈蚀怪",
+  "sahuagin": "鲨鱼人",
+  "sphinx（androsphinx / gynosphinx）": "斯芬克斯（公斯芬克斯 / 母斯芬克斯）",
+  "tarrasque": "泰拉斯奎",
+  "wight": "尸鬼",
+  "will-o'-wisp": "鬼火",
+  "worg / dire wolf": "座狼 / 恐狼",
+  "wererat / werewolf / werebear / wereboar / weretiger": "鼠人 / 狼人 / 熊人 / 野猪人 / 虎人",
+  "zombie": "僵尸"
+ },
+ "zh_en": {
+  "属性值": "ability score",
+  "属性调整值": "ability modifier",
+  "优势": "advantage",
+  "劣势": "disadvantage",
+  "检定": "check",
+  "属性检定": "ability check",
+  "豁免": "save",
+  "难度等级": "DC",
+  "熟练加值": "PB",
+  "熟练（项）": "proficiency",
+  "技能": "skill",
+  "游戏主持人": "GM",
+  "玩家角色": "PC",
+  "经验值": "XP",
+  "等级": "level",
+  "职业等级": "class level",
+  "角色等级": "character level",
+  "生命值": "hit points",
+  "临时生命值": "temporary HP",
+  "生命骰": "hit die / hit dice",
+  "短休": "short rest",
+  "长休": "long rest",
+  "幸运": "Luck",
+  "厄运": "Doom",
+  "里程碑": "milestone",
+  "多职业": "multiclassing",
+  "环阶": "circle",
+  "标签": "tag",
+  "生物": "creature",
+  "挑战等级": "CR",
+  "金币": "gp",
+  "力量": "Strength",
+  "敏捷": "Dexterity",
+  "体质": "Constitution",
+  "智力": "Intelligence",
+  "感知": "Wisdom",
+  "魅力": "Charisma",
+  "目盲": "blinded",
+  "魅惑": "charmed",
+  "耳聋": "deafened",
+  "力竭": "exhaustion",
+  "恐慌": "frightened",
+  "擒抱": "grappled",
+  "失能": "incapacitated",
+  "隐形": "invisible",
+  "麻痹": "paralyzed",
+  "石化": "petrified",
+  "中毒": "poisoned",
+  "倒地": "prone",
+  "束缚": "restrained",
+  "震慑": "stunned",
+  "受惊": "surprised",
+  "昏迷": "unconscious",
+  "杂技": "Acrobatics",
+  "驯兽": "Animal Handling",
+  "奥秘": "Arcana",
+  "运动": "Athletics",
+  "欺瞒": "Deception",
+  "历史": "History",
+  "洞悉": "Insight",
+  "威吓": "Intimidation",
+  "调查": "Investigation",
+  "医药": "Medicine",
+  "自然": "Nature",
+  "察觉": "Perception",
+  "表演": "Performance",
+  "游说": "Persuasion",
+  "宗教": "Religion",
+  "巧手": "Sleight of Hand",
+  "隐匿": "Stealth",
+  "求生": "Survival",
+  "血统": "lineage",
+  "传承": "heritage",
+  "兽裔": "Beastkin",
+  "矮人": "Dwarf",
+  "精灵": "Elf",
+  "人类": "Human",
+  "兽人": "Orc",
+  "小族": "Smallfolk",
+  "都市": "Cosmopolitan",
+  "村舍": "Cottage",
+  "流散": "Diaspora",
+  "林间": "Grove",
+  "游牧": "Nomadic",
+  "猎杀者": "Slayer",
+  "岩石": "Stone",
+  "臣属": "Supplicant",
+  "荒野": "Wildlands",
+  "侏儒（血脉）": "Gnome / Gnomish",
+  "半身人": "Halfling",
+  "背景": "background",
+  "天赋": "talent",
+  "罪犯": "Criminal",
+  "学者": "Scholar",
+  "士兵": "Soldier",
+  "奥术师": "Arcanist",
+  "战斗施法": "Combat Casting",
+  "元素学者": "Elemental Savant",
+  "精神坚韧": "Mental Fortitude",
+  "灵能师": "Psycanist",
+  "仪祭师": "Ritualist",
+  "学派专精": "School Specialization",
+  "法术决斗者": "Spell Duelist",
+  "健儿": "Athletic",
+  "护甲专家": "Armor Expert",
+  "护甲训练": "Armor Training",
+  "战地锤炼": "Combat Conditioning",
+  "狂怒冲锋": "Furious Charge",
+  "徒手格斗": "Hand To Hand",
+  "重型武器精通": "Heavy Weapon Mastery",
+  "机会主义者": "Opportunist",
+  "体魄坚韧": "Physical Fortitude",
+  "盾牌精通": "Shield Mastery",
+  "先锋": "Vanguard",
+  "武器专修": "Weapon Discipline",
+  "警觉": "Aware",
+  "潜伏": "Covert",
+  "地城探索者": "Dungeoneer",
+  "远行者": "Far Traveler",
+  "战地医护": "Field Medic",
+  "多语者": "Polyglot",
+  "迅捷": "Quick",
+  "明察": "Scrutinous",
+  "行业技能": "Trade Skills",
+  "幸运之触": "Touch of Luck",
+  "野蛮人": "Barbarian",
+  "吟游诗人": "Bard",
+  "牧师": "Cleric",
+  "德鲁伊": "Druid",
+  "战士": "Fighter",
+  "机械师": "Mechanist",
+  "武僧": "Monk",
+  "圣武士": "Paladin",
+  "游侠": "Ranger",
+  "盗贼": "Rogue",
+  "术士": "Sorcerer",
+  "邪术师": "Warlock",
+  "法师": "Wizard",
+  "法术": "spell",
+  "戏法": "cantrip",
+  "仪式": "ritual",
+  "法术位": "spell slot",
+  "法术书": "spellbook",
+  "施法属性": "spellcasting ability",
+  "施法法器": "spellcasting focus",
+  "专注": "concentration",
+  "术法点": "sorcery points",
+  "奥术": "Arcane",
+  "神术": "Divine",
+  "原初": "Primordial",
+  "命运": "Wyrd",
+  "防护系": "abjuration",
+  "咒法系": "conjuration",
+  "预言系": "divination",
+  "附魔系": "enchantment",
+  "塑能系": "evocation",
+  "幻术系": "illusion",
+  "死灵系": "necromancy",
+  "变化系": "transmutation",
+  "攻击检定": "attack roll",
+  "伤害掷骰": "damage roll",
+  "近战攻击": "melee attack",
+  "远程攻击": "ranged attack",
+  "武器攻击": "weapon attack",
+  "徒手打击": "unarmed strike",
+  "动作": "action",
+  "附赠动作": "bonus action",
+  "反应": "reaction",
+  "疾走": "Dash",
+  "闪避": "Dodge",
+  "躲藏": "Hide",
+  "准备": "Ready",
+  "使用物品": "Use an Object",
+  "借机攻击": "opportunity attack",
+  "重击": "critical hit",
+  "掩护": "cover",
+  "微光": "dim light",
+  "黑暗视觉": "darkvision",
+  "被动察觉": "passive Perception",
+  "被动调查": "passive Investigation",
+  "强酸": "acid",
+  "钝击": "bludgeoning",
+  "寒冷": "cold",
+  "火焰": "fire",
+  "力场": "force",
+  "闪电": "lightning",
+  "死灵": "necrotic",
+  "穿刺": "piercing",
+  "毒素": "poison",
+  "心灵": "psychic",
+  "光耀": "radiant",
+  "斩击": "slashing",
+  "雷鸣": "thunder",
+  "轻型": "Light",
+  "重型": "Heavy",
+  "灵巧": "Finesse",
+  "双手": "Two-Handed",
+  "多用": "Versatile",
+  "投掷": "Thrown",
+  "触及": "Reach",
+  "弹药": "Ammunition",
+  "装填": "Loading",
+  "装备": "equipment",
+  "护甲": "armor",
+  "盾牌": "shield",
+  "武器": "weapon",
+  "工具": "tool",
+  "临时武器": "improvised weapon",
+  "护甲等级": "AC",
+  "微型": "Tiny",
+  "小型": "Small",
+  "中型": "Medium",
+  "大型": "Large",
+  "巨型": "Huge",
+  "超巨型": "Gargantuan",
+  "野兽": "Beast",
+  "类人生物": "Humanoid",
+  "抗性": "resistance",
+  "免疫": "immunity",
+  "易伤": "vulnerability",
+  "生命值上限": "hit point maximum",
+  "自动失败": "auto-fail",
+  "通用语": "Common",
+  "矮人语": "Dwarvish",
+  "精灵语": "Elvish",
+  "巨人语": "Giant",
+  "侏儒语": "Gnomish",
+  "半身人语": "Halfling",
+  "兽人语": "Orcish",
+  "龙语": "Draconic",
+  "原初语": "Primordial",
+  "木族语": "Sylvan",
+  "地底通用语": "Undercommon",
+  "盗贼黑话": "Thieves' Cant",
+  "神系": "pantheon",
+  "神祇": "deity",
+  "领域": "domain",
+  "死亡": "Death",
+  "战争": "War",
+  "生命": "Life",
+  "光明": "Light",
+  "知识": "Knowledge",
+  "工艺": "Crafting",
+  "风暴": "Tempest",
+  "诡术": "Trickery",
+  "ORC 许可证": "ORC License",
+  "授权材料": "Licensed Material",
+  "保留材料": "Reserved Material",
+  "署名": "Attribution",
+  "知识共享署名 4.0 国际许可协议": "Creative Commons Attribution 4.0 International License",
+  "系统参考文档": "System Reference Document",
+  "威世智": "Wizards of the Coast",
+  "狗头人出版社": "Kobold Press",
+  "轮": "round",
+  "回合": "turn",
+  "先攻": "initiative",
+  "先攻顺序": "initiative order",
+  "危险": "hazard",
+  "陷阱": "trap",
+  "触发条件": "trigger",
+  "结算": "resolution",
+  "遭遇": "encounter",
+  "战斗": "combat",
+  "对抗检定": "contest",
+  "被动检定": "passive check",
+  "团体检定": "group check",
+  "分值": "score",
+  "休整期": "downtime",
+  "行进速度": "travel pace",
+  "强行军": "forced march",
+  "困难地形": "difficult terrain",
+  "强制移动": "forced movement",
+  "负重": "encumbrance",
+  "轻度/重度遮蔽": "slightly/heavily obscured",
+  "敏锐感官": "keensense",
+  "震颤感知": "tremorsense",
+  "真实视觉": "truesight",
+  "视觉": "vision",
+  "物质位面": "Material Plane",
+  "以太位面": "Ethereal Plane",
+  "星界位面": "Astral Plane",
+  "过渡位面": "Transitive Planes",
+  "天界": "Celestial",
+  "邪魔": "Fiend",
+  "元素": "Elemental",
+  "传送门": "portal",
+  "半掩护/四分之三掩护/全身掩护": "half/three-quarters/total cover",
+  "大失败": "critical miss",
+  "死亡豁免": "death save",
+  "濒死": "dying",
+  "稳定": "stable",
+  "巨量伤害": "massive damage",
+  "诅咒": "curse",
+  "疾病": "disease",
+  "惊惧": "dread",
+  "毒药": "poison",
+  "饥饿": "starvation",
+  "脱水": "dehydration",
+  "窒息": "suffocating",
+  "空间": "space",
+  "射程": "range",
+  "远距离射程": "long range",
+  "近距离": "close range",
+  "推挤": "shove",
+  "双武器战斗": "two weapon fighting",
+  "武器选项": "Weapon Options",
+  "骑乘战斗": "mounted combat",
+  "坐骑": "mount",
+  "水下战斗": "underwater combat",
+  "狂欢": "carousing",
+  "人脉": "contact",
+  "人情": "favor",
+  "制作": "crafting",
+  "研究": "researching",
+  "线索": "clue",
+  "训练": "training",
+  "工作": "working",
+  "教导者": "instructor",
+  "银币": "sp",
+  "铜币": "cp",
+  "电子币": "ep",
+  "铂金币": "pp",
+  "子职业": "subclass",
+  "狂暴": "Rage",
+  "鲁莽攻击": "Reckless Attack",
+  "引导神力": "Channel Divinity",
+  "野性变形": "Wild Shape",
+  "动作如潮": "Action Surge",
+  "回气": "Second Wind",
+  "气": "Ki",
+  "神圣惩击": "Divine Smite",
+  "宿敌": "Favored Foe",
+  "偷袭": "Sneak Attack",
+  "超魔法": "Metamagic",
+  "魔能祈唤": "Eldritch Invocations",
+  "魔能爆": "Eldritch Blast",
+  "契约恩赐": "Pact Boon",
+  "契约魔法": "Pact Magic",
+  "秘奥": "Arcanum",
+  "多重攻击": "Multiattack",
+  "无甲防御": "Unarmored Defense",
+  "法术豁免难度等级": "spell save DC",
+  "法术攻击加值": "spell attack bonus",
+  "狂战士": "Berserker",
+  "狂野之怒": "Wild Fury",
+  "学识": "Lore",
+  "胜利": "Victory",
+  "生命领域": "Life Domain",
+  "光明领域": "Light Domain",
+  "战争领域": "War Domain",
+  "枝叶": "Leaf",
+  "变形者": "Shifter",
+  "法术之刃": "Spell Blade",
+  "武器大师": "Weapon Master",
+  "冶金师": "Metallurgist",
+  "法术工匠": "Spellwright",
+  "闪烁之暗": "Flickering Dark",
+  "开手": "Open Hand",
+  "虔诚": "Devotion",
+  "正义": "Justice",
+  "猎人": "Hunter",
+  "兽群之主": "Pack Master",
+  "执法者": "Enforcer",
+  "窃贼": "Thief",
+  "混沌": "Chaos",
+  "龙裔": "Draconic",
+  "收割者": "Reaper",
+  "战斗法师": "Battle Mage",
+  "戏法能手": "Cantrip Adept",
+  "货币": "currency",
+  "穿上 / 脱下": "don / doff",
+  "坐骑护甲": "barding",
+  "噪音": "Noisy",
+  "笨重": "Cumbersome",
+  "天然材料": "Natural Materials",
+  "特殊装备": "special gear",
+  "冒险装备": "adventuring gear",
+  "工具套装": "tool kit",
+  "游戏套组": "gaming set",
+  "拖拽物件": "drawn object",
+  "鞍具": "saddle",
+  "雇工": "hireling",
+  "住宿": "lodging",
+  "载具": "vehicle",
+  "伤害阈值": "damage threshold",
+  "载具韧性": "Vehicle Resilience",
+  "船员": "crew",
+  "货物容量": "cargo capacity",
+  "临时修补": "patch job",
+  "更换部件": "replace parts",
+  "魔法物品": "magic item",
+  "调谐": "attunement",
+  "调谐（动词）": "attune",
+  "充能": "charges",
+  "命令词": "command word",
+  "稀有度": "rarity",
+  "普通": "Common",
+  "非普通": "Uncommon",
+  "稀有": "Rare",
+  "极珍稀": "Very Rare",
+  "传奇": "Legendary",
+  "无价": "Priceless",
+  "魔杖": "wand",
+  "法杖": "staff",
+  "权杖": "rod",
+  "卷轴": "scroll",
+  "药水": "potion",
+  "奇物": "wondrous item",
+  "报复打击": "retributive strike",
+  "异次元空间": "extradimensional space",
+  "施放时间": "casting time",
+  "附赠动作 / 反应": "bonus action / reaction",
+  "自身": "self",
+  "接触": "touch",
+  "效果区域": "area of effect",
+  "起始点": "point of origin",
+  "锥形 / 立方体 / 柱形 / 线形 / 球形": "cone / cube / cylinder / line / sphere",
+  "成分": "components",
+  "言语（V）": "verbal (V)",
+  "姿势（S）": "somatic (S)",
+  "材料（M）": "material (M)",
+  "持续时间": "duration",
+  "立即": "instantaneous",
+  "专注检定": "concentration check",
+  "目标": "target",
+  "更高环阶": "at higher circles",
+  "法术攻击": "spell attack",
+  "法术攻击掷骰": "spell attack roll",
+  "已知法术": "known spells",
+  "准备法术": "prepared spells",
+  "法术来源": "spell source",
+  "元素伤害类型": "elemental damage type",
+  "材料成分花费": "material component cost",
+  "穿甲施法": "casting in armor",
+  "组合魔法效果": "combining magical effects",
+  "数据块": "stat block",
+  "护甲等级（AC）": "Armor Class (AC)",
+  "生命值（HP）": "Hit Points (HP)",
+  "感官": "Senses",
+  "心灵感应": "telepathy",
+  "通过心灵感应": "telepathically",
+  "语言": "Languages",
+  "挑战等级（CR）": "Challenge Rating (CR)",
+  "传奇生物": "legendary creature",
+  "传奇动作": "legendary action",
+  "巢穴动作": "lair action",
+  "区域效果": "regional effect",
+  "充能 N-M": "Recharge N–M",
+  "充能特殊": "Recharge Special",
+  "近战武器攻击": "Melee Weapon Attack",
+  "远程武器攻击": "Ranged Weapon Attack",
+  "近战或远程武器攻击": "Melee or Ranged Weapon Attack",
+  "近战法术攻击": "Melee Spell Attack",
+  "远程法术攻击": "Ranged Spell Attack",
+  "命中": "Hit",
+  "逃脱难度等级": "escape DC",
+  "施法": "Spellcasting",
+  "随意 / 每日各 3 次 / 每日 1 次": "At will / 3/day each / 1/day",
+  "异怪": "Aberration",
+  "动物": "Animal",
+  "天界生物": "Celestial",
+  "构装体": "Construct",
+  "龙": "Dragon",
+  "妖精": "Fey",
+  "巨人": "Giant",
+  "异怪兽": "Monstrosity",
+  "泥怪": "Ooze",
+  "异界生物": "Outsider",
+  "植物": "Plant",
+  "……集群": "Swarm of Tiny …",
+  "亡灵": "Undead",
+  "微型 / 小型 / 中型 / 大型 / 巨型 / 超巨型": "Tiny / Small / Medium / Large / Huge / Gargantuan",
+  "两栖": "Amphibious",
+  "变形": "Change Shape",
+  "构装体本质": "Construct Nature",
+  "元素本质": "Elemental Nature",
+  "虚假外观": "False Appearance",
+  "妖精血统": "Fey Ancestry",
+  "恐怖威仪": "Frightful Presence",
+  "巨人特质": "Giant Attributes",
+  "坚韧": "Hardy",
+  "强化感官 / 视觉 / 嗅觉 / 听觉": "Heightened Senses / Sight / Smell / Hearing",
+  "屏息": "Hold Breath",
+  "不变形态": "Immutable Form",
+  "传奇抗性": "Legendary Resistance",
+  "魔法抗性": "Magic Resistance",
+  "魔法武器": "Magic Weapons",
+  "拟声": "Mimicry",
+  "异怪兽韧性": "Monstrosity Resilience",
+  "多头": "Multiple Heads",
+  "泥怪本质": "Ooze Nature",
+  "群体战术": "Pack Tactics",
+  "扑击": "Pounce",
+  "再生": "Regeneration",
+  "复生": "Rejuvenation",
+  "鲁莽": "Reckless",
+  "不屈": "Relentless",
+  "攻城怪物 / 攻城巨兽": "Siege Monster / Siege Behemoth",
+  "蛛行": "Spider Climb",
+  "恶臭": "Stench",
+  "阳光敏感": "Sunlight Sensitivity",
+  "集群": "Swarm",
+  "践踏冲锋": "Trampling Charge",
+  "亡灵坚韧": "Undead Fortitude",
+  "亡灵本质": "Undead Nature",
+  "清醒": "Wakeful",
+  "蛛网感知 / 蛛网行走": "Web Sense / Web Walker",
+  "异怪韧性": "Aberrant Resilience",
+  "天使韧性": "Angelic Resilience",
+  "天界韧性": "Celestial Resilience",
+  "构装体韧性": "Construct Resilience",
+  "恶魔韧性": "Demonic Resilience",
+  "魔鬼韧性": "Devilish Resilience",
+  "灰矮人韧性": "Duergar Resilience",
+  "元素韧性": "Elemental Resilience",
+  "妖精韧性": "Fey Resilience",
+  "血肉魔像韧性": "Flesh Golem Resilience",
+  "魔像韧性": "Golem Resilience",
+  "泥怪韧性": "Ooze Resilience",
+  "植物韧性": "Plant Resilience",
+  "集群韧性": "Swarm Resilience",
+  "亡灵韧性": "Undead Resilience",
+  "吸血鬼韧性": "Vampiric Resilience",
+  "蛛化精灵": "Drider",
+  "树精": "Dryad",
+  "怯魔 / 劣魔": "Dretch / Lemure",
+  "灰矮人": "Duergar",
+  "蛛人": "Ettercap",
+  "呓语魔": "Gibbering Mouther",
+  "凝胶方块": "Gelatinous Cube",
+  "石像鬼": "Gargoyle",
+  "尸妖": "Ghast",
+  "食尸鬼": "Ghoul",
+  "鬼婆（绿鬼婆 / 夜鬼婆 / 海鬼婆 / 伏击鬼婆）": "Hag（Green / Night / Sea / Ambush）",
+  "海马兽 / 海马": "Hippocampus / Seahorse",
+  "海妖": "Kraken",
+  "拉弥亚": "Lamia",
+  "巫妖": "Lich",
+  "蜥蜴人": "Lizardfolk",
+  "蝎尾狮": "Manticore",
+  "人鱼 / 海魔": "Merfolk / Merrow",
+  "拟形怪": "Mimic",
+  "牛头人": "Minotaur",
+  "木乃伊领主": "Mummy Lord",
+  "菌人": "Mycolid",
+  "娜迦": "Naga",
+  "枭熊": "Owlbear",
+  "深狱炼魔": "Pit Fiend",
+  "伪龙": "Pseudodragon",
+  "紫虫": "Purple Worm",
+  "罗刹": "Rakshasa",
+  "石绳怪": "Roper",
+  "锈蚀怪": "Rust Monster",
+  "鲨鱼人": "Sahuagin",
+  "斯芬克斯（公斯芬克斯 / 母斯芬克斯）": "Sphinx（Androsphinx / Gynosphinx）",
+  "泰拉斯奎": "Tarrasque",
+  "尸鬼": "Wight",
+  "鬼火": "Will-o'-Wisp",
+  "座狼 / 恐狼": "Worg / Dire Wolf",
+  "鼠人 / 狼人 / 熊人 / 野猪人 / 虎人": "Wererat / Werewolf / Werebear / Wereboar / Weretiger",
+  "僵尸": "Zombie"
+ }
+}

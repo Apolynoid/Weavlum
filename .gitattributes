@@ -1,0 +1,9 @@
+# 换行策略：
+# - .cmd/.bat 必须保持纯 CRLF（按二进制存储，避免 GitHub/autocrlf 改写）
+# - Linux 脚本固定 LF
+# - 其余文本交给 Git 自动判断
+* text=auto
+*.cmd -text
+*.bat -text
+*.ps1 text eol=crlf
+*.sh text eol=lf

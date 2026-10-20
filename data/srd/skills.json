@@ -1,0 +1,92 @@
+{
+ "acrobatics": {
+  "name": "杂技",
+  "ability": "dex",
+  "desc": "保持平衡、翻滚、跳水鱼跃；挣脱擒抱或避免被推倒。"
+ },
+ "animal_handling": {
+  "name": "驯兽",
+  "ability": "wis",
+  "desc": "安抚、驯服、驱使动物；让坐骑在险境中保持镇定。"
+ },
+ "arcana": {
+  "name": "奥秘",
+  "ability": "int",
+  "desc": "回忆法术、魔法物品、符文印记、异界生物与法阵的知识。"
+ },
+ "athletics": {
+  "name": "运动",
+  "ability": "str",
+  "desc": "攀爬、跳跃、游泳、推拉与挣脱——靠力量的身体动作。"
+ },
+ "deception": {
+  "name": "欺瞒",
+  "ability": "cha",
+  "desc": "说谎、伪装、诈赌、误导；藏住真实意图。"
+ },
+ "history": {
+  "name": "历史",
+  "ability": "int",
+  "desc": "回忆历史事件、古老传说、王朝更替与著名战役的知识。"
+ },
+ "insight": {
+  "name": "洞悉",
+  "ability": "wis",
+  "desc": "判断他人的真实意图与情绪——是否说谎、下一步想做什么。"
+ },
+ "intimidation": {
+  "name": "威吓",
+  "ability": "cha",
+  "desc": "用威胁与气场逼人就范；恐吓、施压、挑衅。"
+ },
+ "investigation": {
+  "name": "调查",
+  "ability": "int",
+  "desc": "勘查现场、串联线索、翻找暗格与机关。"
+ },
+ "medicine": {
+  "name": "医药",
+  "ability": "wis",
+  "desc": "稳定濒死同伴、诊断病症、验尸判断死因。"
+ },
+ "nature": {
+  "name": "自然",
+  "ability": "int",
+  "desc": "辨认动植物、地形与天候；野外自然界的知识。"
+ },
+ "perception": {
+  "name": "察觉",
+  "ability": "wis",
+  "desc": "察听动静、留意细节，发现隐藏的生物或物品（被动察觉常用）。"
+ },
+ "performance": {
+  "name": "表演",
+  "ability": "cha",
+  "desc": "歌舞、乐器、演讲；取悦并打动观众。"
+ },
+ "persuasion": {
+  "name": "游说",
+  "ability": "cha",
+  "desc": "用道理与魅力谈判、调停、达成一致。"
+ },
+ "religion": {
+  "name": "宗教",
+  "ability": "int",
+  "desc": "回忆神祇、仪式、圣徽、天界与亡灵生物的知识。"
+ },
+ "sleight_of_hand": {
+  "name": "巧手",
+  "ability": "dex",
+  "desc": "扒窃、藏匿小物、手指戏法。"
+ },
+ "stealth": {
+  "name": "隐匿",
+  "ability": "dex",
+  "desc": "潜行、躲藏——不发出声响、不暴露身影。"
+ },
+ "survival": {
+  "name": "求生",
+  "ability": "wis",
+  "desc": "追踪、辨向、觅食取水、预测天气（野外冒险常用）。"
+ }
+}

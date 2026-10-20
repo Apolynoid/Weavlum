@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% block title %}跑团桌 · Weavlum{% endblock %}
+{% block content %}
+<div class="table-layout">
+  <aside class="side">
+    <div class="card"><h2>队伍</h2><div id="party"></div></div>
+    <div class="card hidden" id="quest-card">
+      <h2>任务</h2>
+      <div class="tabs quest-filter" id="quest-filter">
+        <button class="tab" data-qf="in_progress">进行中</button>
+        <button class="tab" data-qf="all">全部</button>
+      </div>
+      <div id="quest-milestone" class="milestone-hint"></div>
+      <div id="quest-pressure" class="dim"></div>
+      <div id="quests"></div>
+    </div>
+    <div class="card"><h2>战况</h2><div id="meta"></div></div>
+  </aside>
+  <section class="center">
+    <div class="card board-card">
+      <div class="board-head">
+        <h2>战术板</h2>
+        <span class="dim" id="board-info">未进入战斗</span>
+        <button class="btn small hidden" id="btn-dash">冲刺（双倍移动）</button>
+        <span class="dim" id="board-zoom">100%</span>
+        <button class="btn small" id="btn-zoom-out">−</button>
+        <button class="btn small" id="btn-zoom-in">+</button>
+        <button class="btn small" id="btn-zoom-reset">复位</button>
+        <button class="btn small" id="btn-grid">网格</button>
+      </div>
+      <canvas id="board" width="1000" height="420"></canvas>
+      <div id="board-tip" class="board-tip hidden"></div>
+      <p class="dim" id="board-legend">拖动自己的棋子移动（轮到你时受速度限制，超出会被拦下）；点选棋子查看与他人距离；滚轮或按钮缩放，放大后空白处拖动平移；网格按钮叠加 5 尺格。</p>
+    </div>
+    <div class="card log-card">
+      <h2>冒险日志</h2>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <div id="ai-thinking" class="ai-thinking hidden">AI GM 正在思考</div>
+      <div class="chatline">
+        <textarea id="chat-input" rows="2" placeholder="描述你的行动（回车发送，Shift+回车换行）"></textarea>
+        <button class="btn primary" id="btn-send">行动</button>
+      </div>
+    </div>
+  </section>
+  <aside class="side">
+    <div class="card">
+      <h2>掷骰</h2>
+      <div class="dice-row" id="quick-rolls"></div>
+      <div class="row" style="margin-bottom:var(--space-3)">
+        <button class="btn small" id="btn-quick-edit">自定义固定掷骰</button>
+      </div>
+      <div class="hidden" id="quick-editor">
+        <div id="quick-editor-rows"></div>
+        <div class="row" style="margin-bottom:var(--space-2)">
+          <button class="btn small" id="quick-add-row">＋ 添加一条</button>
+          <button class="btn small primary" id="quick-save">保存</button>
+          <button class="btn small" id="quick-cancel">取消</button>
+          <button class="btn small" id="quick-reset">恢复默认</button>
+        </div>
+        <p class="dim">名称用于按钮与掷骰原因；表达式支持 1d20+5、2d6+3 等，最多 8 条。</p>
+      </div>
+      <div class="field"><label>自由表达式</label><input id="roll-expr" placeholder="例如 1d20+5"></div>
+      <div class="field"><label>原因（可选）</label><input id="roll-reason" maxlength="60" placeholder="例如：力量检定"></div>
+      <button class="btn primary" id="btn-roll">掷骰</button>
+      <hr>
+      <div class="field"><label>检定属性</label><select id="check-ability"></select></div>
+      <div class="field"><label>DC（可空）</label><input id="check-dc" type="number" min="1" max="40"></div>
+      <div class="field"><label>优 / 劣势</label><select id="check-mode"><option value="normal">普通</option><option value="advantage">优势</option><option value="disadvantage">劣势</option></select></div>
+      <button class="btn primary" id="btn-check">掷检定</button>
+    </div>
+    <div class="card"><h2>战斗</h2><div id="combat"></div></div>
+    <div class="card"><h2>主持</h2><div id="dm-panel"></div></div>
+    <div class="card hidden" id="dm-brief-card">
+      <h2>GM 秘闻 <span class="dim">（含剧透，仅 GM 可见）</span></h2>
+      <div id="dm-brief" class="dm-brief"></div>
+    </div>
+    <div class="card hidden" id="dm-console-card">
+      <h2>GM 控制台</h2>
+      <p class="dim">与 AI GM 同权的操作入口（人类 GM / 主机）——底层走同一套引擎动作。</p>
+      <div class="field"><label>遭遇：生成怪物（用引擎数据，自动掷先攻并开战）</label>
+        <div class="row">
+          <span class="dim">CR</span>
+          <select id="dc-mon-cr-min" style="width:104px"></select>
+          <span class="dim">～</span>
+          <select id="dc-mon-cr-max" style="width:104px"></select>
+          <span class="dim" id="dc-mon-range"></span>
+        </div>
+        <div class="row">
+          <select id="dc-mon" style="flex:1"></select>
+          <input id="dc-mon-count" type="number" value="1" min="1" max="12" style="width:64px" title="数量">
+          <button class="btn small" id="dc-spawn-btn">生成怪物</button>
+        </div>
+        <p class="dim hidden" id="dc-mon-preview" style="white-space: pre-line;"></p>
+        <div class="row">
+          <button class="btn small" id="dc-next-turn-btn">推进一回合</button>
+          <button class="btn small" id="dc-end-combat-btn">结束战斗</button>
+        </div>
+      </div>
+      <div class="field"><label>发放奖励（物品 / 金钱）</label>
+        <div class="row">
+          <select id="dc-reward-target" style="flex:1"></select>
+        </div>
+        <div class="row">
+          <select id="dc-reward-item" style="flex:1"></select>
+          <input id="dc-reward-qty" type="number" value="1" min="1" style="width:64px" title="数量">
+          <button class="btn small" id="dc-reward-item-btn">发放物品</button>
+        </div>
+        <div class="row">
+          <input id="dc-reward-gold" type="number" value="10" step="0.01" style="width:90px" title="单位：金（gp），负数为扣款">
+          <button class="btn small" id="dc-reward-gold-btn">发放金币</button>
+          <span class="dim">单位金 · 负数扣款 · 目标可选全队</span>
+        </div>
+      </div>
+      <div class="field"><label>推进时间（分钟）</label>
+        <div class="row">
+          <input id="dc-minutes" type="number" value="10" style="width:80px">
+          <input id="dc-time-reason" placeholder="原因" style="flex:1">
+          <button class="btn small" id="dc-time-btn">推进</button>
+        </div>
+      </div>
+      <div class="field"><label>任务状态</label>
+        <div class="row">
+          <input id="dc-quest" placeholder="任务名 / ID" style="flex:1">
+          <select id="dc-status" style="width:110px">
+            <option value="in_progress">进行中</option>
+            <option value="completed">已完成</option>
+            <option value="failed">失败</option>
+            <option value="expired">过期</option>
+          </select>
+        </div>
+        <div class="row">
+          <input id="dc-note" placeholder="进展注记（可空）" style="flex:1">
+          <button class="btn small" id="dc-quest-btn">更新任务</button>
+        </div>
+      </div>
+      <div class="field"><label>世界笔记</label>
+        <div class="row">
+          <select id="dc-note-kind" style="width:90px">
+            <option value="locations">地点</option>
+            <option value="npcs">NPC</option>
+            <option value="clues">线索</option>
+          </select>
+          <input id="dc-note-name" placeholder="名字" style="flex:1">
+        </div>
+        <div class="row">
+          <input id="dc-note-text" placeholder="一两句说明" style="flex:1">
+          <button class="btn small" id="dc-note-btn">登记</button>
+        </div>
+      </div>
+      <div class="field"><label>角色操作（升级 / 法术 / HP）</label>
+        <div class="row"><select id="dc-char" style="flex:1"></select></div>
+        <div class="row">
+          <button class="btn small" id="dc-level-btn">升级</button>
+          <button class="btn small" id="dc-party-level-btn">全队升级</button>
+          <input id="dc-hp" type="number" value="-5" style="width:70px">
+          <button class="btn small" id="dc-hp-btn">调整 HP</button>
+        </div>
+        <p class="dim" id="dc-pending"></p>
+        <div class="row"><button class="btn small" id="dc-open-sheet">打开所选角色卡（分配提升/选子职业/选恩赐）</button></div>
+        <div class="row">
+          <select id="dc-spell" style="flex:1"></select>
+          <button class="btn small" id="dc-learn-btn">学会</button>
+          <button class="btn small" id="dc-forget-btn">遗忘</button>
+        </div>
+        <p class="dim" id="dc-spell-preview" style="white-space: pre-line;"></p>
+      </div>
+      <div class="field"><label>GM 叙述（以 GM 名义发布）</label>
+        <div class="row">
+          <input id="dc-narrate" placeholder="叙述文字" style="flex:1">
+          <button class="btn small" id="dc-narrate-btn">发布</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+<div id="sheet-modal" class="modal hidden"><div class="modal-body"><button class="btn close" id="btn-close-sheet">关闭</button><div id="sheet"></div></div></div>
+<div id="toast" class="toast hidden"></div>
+<datalist id="item-name-list"></datalist>
+{% endblock %}
+{% block scripts %}
+<script>
+window.SID = {{ sid | tojson }};
+window.QUICK_ROLLS = {{ quick_rolls | tojson }};
+window.ABILITY_NAMES = {{ ability_names | safe }};
+window.SKILLS = {{ skills | safe }};
+window.IS_HOST = {{ "true" if is_host else "false" }};
+window.MONSTERS = {{ monsters | safe }};
+window.SPELLS = {{ spells | safe }};
+window.RACES = {{ races | safe }};
+window.TALENTS = {{ talents | safe }};
+window.CLASS_META = {{ class_meta | safe }};
+window.FEATURES = {{ features | safe }};
+window.CONDITIONS = {{ conditions | safe }};
+window.ITEMS = {{ items | safe }};
+</script>
+<script src="/static/play.js?v={{ asset_version }}"></script>
+{% endblock %}

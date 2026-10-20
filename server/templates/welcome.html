@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}入场 · Weavlum{% endblock %}
+{% block content %}
+<h1>加入冒险</h1>
+<div class="card">
+  <div class="field">
+    <label for="nickname">你的昵称</label>
+    <input id="nickname" maxlength="20" placeholder="例如：阿波" autocomplete="off">
+  </div>
+  <div class="field">
+    <label>我的颜色（名字、发言与战术板棋子用色）</label>
+    <div class="row" id="color-row"></div>
+  </div>
+  <div class="field">
+    <label>我的头像（可选：png / jpg / webp / gif，≤ 512KB）</label>
+    <div class="row">
+      <input type="file" id="avatar-file" accept="image/png,image/jpeg,image/webp,image/gif" style="flex:1">
+    </div>
+  </div>
+  <div class="player-chip dim" id="player-chip"></div>
+  <div id="msg" class="msg"></div>
+  <div class="row">
+    <button class="btn primary" id="btn-create">创建新角色</button>
+  </div>
+</div>
+<div class="card">
+  <h2>主持这局（GM）</h2>
+  <p class="dim">GM 是纯主持身份（不带角色）：负责叙事与裁定，使用 GM 秘闻与控制台。谁先接任谁就是 GM——席位占用期间其他人不能选。</p>
+  {% if dm_occupied and not dm_is_me %}
+  <p class="dim">已有 GM：<strong>{{ dm_name }}</strong>，等 TA 卸任后可以接任。</p>
+  <button class="btn" disabled>席位已被占用</button>
+  {% else %}
+  <button class="btn primary" id="btn-claim-dm">{% if dm_is_me %}继续以 GM 身份入场{% else %}以 GM 身份入场{% endif %}</button>
+  {% endif %}
+</div>
+{% if is_host %}
+<div class="card">
+  <h2>分享给玩家（局域网）</h2>
+  <p class="dim">把局域网网址发给队友——手机/平板连上同一 WiFi，在浏览器里直接输网址就能进。</p>
+  <ul class="char-list">
+  {% for url in share_urls %}
+    <li>
+      <code>{{ url }}</code>
+      <button class="btn" data-copy="{{ url }}">复制</button>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if not lan_detected %}
+  <p class="msg" style="color: var(--bad);">未检测到局域网 IP——检查网络连接后重启服务器刷新本页。</p>
+  {% endif %}
+  <p class="dim">这台电脑自己进游戏请用 <code>{{ local_url }}</code>（仅本机能用，别发出去）；局域网网址在本机浏览器里打不开属正常，那是给其他设备用的。</p>
+</div>
+{% endif %}
+{% if existing %}
+<div class="card">
+  <h2>已有角色（可直接入场）</h2>
+  <ul class="char-list">
+  {% for c in existing %}
+    <li>
+      <div class="charmeta">
+        <strong>{{ c.name }}</strong>
+        <span class="dim">{{ c.race }}{{ c.klass }} · {{ c.level }}级</span>
+        {% if c.owner_nick %}<span class="dim">（{{ c.owner_nick }}）</span>{% endif %}
+        {% if c.in_use %}<span class="tag warn">使用中{% if not c.owner_online %}（离线）{% endif %}</span>{% endif %}
+        {% if c.owner_is_me %}<span class="tag">你的角色</span>{% endif %}
+      </div>
+      <button class="btn{% if c.owner_is_me %} primary{% endif %}" data-pick="{{ c.id }}" {% if c.in_use and not c.owner_is_me %}disabled{% endif %}>{% if c.owner_is_me %}回到此角色{% elif c.in_use %}使用中{% else %}以此角色入场{% endif %}</button>
+      {% if c.can_delete %}<button class="btn small" data-del="{{ c.id }}" data-name="{{ c.name }}">删除</button>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+<div class="card">
+  <h2>导入角色卡</h2>
+  <p class="dim">支持本平台导出的角色卡 JSON 文件，导入后直接入场。</p>
+  <input type="file" id="import-file" accept=".json,application/json">
+  <button class="btn" id="btn-import">导入并入场</button>
+</div>
+{% endblock %}
+{% block scripts %}<script>window.PLAYER_COLORS = {{ player_colors | safe }};</script><script src="/static/welcome.js?v={{ asset_version }}"></script>{% endblock %}

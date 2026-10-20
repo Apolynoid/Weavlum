@@ -1,0 +1,59 @@
+{
+ "criminal": {
+  "name": "罪犯",
+  "name_en": "Criminal",
+  "skill_choices": [
+   "stealth",
+   "investigation",
+   "insight",
+   "deception"
+  ],
+  "skill_count": 2,
+  "additional_zh": "你知晓盗贼黑话。如果你已经知晓这门语言，则改为学习一门你自选的其他语言。获得一种工具和一种载具的熟练。",
+  "equipment_zh": "五支粉笔、一个抓钩、一套深色旅行者服装或一套戏服，以及一个装有 10 金币的腰包。",
+  "talent_choices": [
+   "covert",
+   "scrutinous",
+   "touch-of-luck"
+  ],
+  "desc": "你知晓盗贼黑话。如果你已经知晓这门语言，则改为学习一门你自选的其他语言。获得一种工具和一种载具的熟练。；装备：五支粉笔、一个抓钩、一套深色旅行者服装或一套戏服，以及一个装有 10 金币的腰包。"
+ },
+ "scholar": {
+  "name": "学者",
+  "name_en": "Scholar",
+  "skill_choices": [
+   "arcana",
+   "history",
+   "nature",
+   "religion"
+  ],
+  "skill_count": 2,
+  "additional_zh": "学习两门你自选的额外语言，或获得一项与你研究领域相关的工具或载具的熟练。",
+  "equipment_zh": "一瓶墨水、一支羽毛笔、一把小刀、一本关于某个非常专门主题的参考书、一套普通服装，以及一个装有 10 金币的腰包。",
+  "talent_choices": [
+   "polyglot",
+   "ritualist",
+   "school-specialization"
+  ],
+  "desc": "学习两门你自选的额外语言，或获得一项与你研究领域相关的工具或载具的熟练。；装备：一瓶墨水、一支羽毛笔、一把小刀、一本关于某个非常专门主题的参考书、一套普通服装，以及一个装有 10 金币的腰包。"
+ },
+ "soldier": {
+  "name": "士兵",
+  "name_en": "Soldier",
+  "skill_choices": [
+   "animal_handling",
+   "athletics",
+   "medicine",
+   "survival"
+  ],
+  "skill_count": 2,
+  "additional_zh": "获得一种你自选的工具和一种载具的熟练。",
+  "equipment_zh": "一个军衔标志（如信件、徽章或身份牌）、一套野战餐具、一副扑克牌或一套骰子、一套普通服装，以及一个装有 10 金币的腰包。",
+  "talent_choices": [
+   "combat-casting",
+   "combat-conditioning",
+   "field-medic"
+  ],
+  "desc": "获得一种你自选的工具和一种载具的熟练。；装备：一个军衔标志（如信件、徽章或身份牌）、一套野战餐具、一副扑克牌或一套骰子、一套普通服装，以及一个装有 10 金币的腰包。"
+ }
+}

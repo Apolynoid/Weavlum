@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Weavlum{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css?v={{ asset_version }}">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">{% block brand %}<a href="/">Weavlum · 黑旗 SRD 局域网跑团</a>{% endblock %}</div>
+  <nav>{% block nav %}<a href="/">入口</a><a href="/play">跑团桌</a><a href="/credits">许可与致谢</a>{% endblock %}</nav>
+</header>
+<main class="page">
+{% block content %}{% endblock %}
+</main>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% block title %}服务器管理 · Weavlum{% endblock %}
+{% block brand %}<span>Weavlum · 服务器管理</span>{% endblock %}
+{% block nav %}{% endblock %}
+{% block content %}
+<h1>主机管理</h1>
+<div class="create-layout">
+  <div class="create-main">
+    <div class="card">
+      <h2>LLM 接入（OpenAI 兼容）</h2>
+      <div class="field"><label>Base URL</label><input id="s-base" value="{{ settings.llm.base_url }}"></div>
+      <div class="field"><label>API Key</label><input id="s-key" type="password" value="{{ settings.llm.api_key }}" placeholder="本地 Ollama 可留空"></div>
+      <div class="field"><label>模型</label><input id="s-model" value="{{ settings.llm.model }}"></div>
+      <div class="row">
+        <button class="btn primary" id="btn-save-llm">保存配置</button>
+        <button class="btn" id="btn-test-llm">测试连接</button>
+        <span id="llm-status" class="dim"></span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>世界设定 / 模组文本</h2>
+      <p class="dim">粘贴设定或模组，AI GM 会遵循它；留空则由 AI 即兴生成。</p>
+      <textarea id="s-world" rows="8">{{ world }}</textarea>
+      <button class="btn primary" id="btn-save-world">保存世界设定</button>
+    </div>
+    <div class="card">
+      <h2>AI 主持风格（额外要求）</h2>
+      <p class="dim">写给 AI GM 的额外要求，优先级高于默认准则。例如：回复再短一点 / 描写更细 / 难度温和 / 不要恐怖元素。</p>
+      <textarea id="s-dmnote" rows="4" placeholder="例如：每次回复不超过三句；希望更硬核的战术战斗">{{ dm_note }}</textarea>
+      <button class="btn primary" id="btn-save-dmnote">保存主持要求</button>
+    </div>
+    <div class="card">
+      <h2>主持模式与 GM 席位</h2>
+      <p class="dim">总闸：决定「GM 席位空着时」是否由 AI 主持。GM 由玩家自助接任（欢迎页或桌面，先到先得），不再由服务器指派；当 GM 就不能有角色。切到「AI 主持」会立即清空 GM 席位。</p>
+      <div class="row">
+        <label class="radio"><input type="radio" name="mode" value="ai" {% if ai_effective %}checked{% endif %}> AI 主持</label>
+        <label class="radio"><input type="radio" name="mode" value="human" {% if not ai_effective %}checked{% endif %}> 人类 GM</label>
+        <button class="btn" id="btn-save-mode">应用模式</button>
+      </div>
+      <p class="dim">当前 GM：{% if dm_name %}{{ dm_name }}{% if dm_online %} · 在线{% else %} · 离线{% endif %}{% else %}（席位空——玩家可在欢迎页或桌面自助接任）{% endif %}</p>
+      {% if dm_sid %}
+      <button class="btn" id="btn-clear-dm">清空 GM 席位（应急）</button>
+      {% endif %}
+    </div>
+    <div class="card">
+      <h2>同伴（AI 控制的 NPC 队友）</h2>
+      <p class="dim">完整角色卡、随队升级、战斗中进入先攻条由 AI 代为行动。AI 在剧情中也会自行招募；这里用于预建与清理。</p>
+      <div class="row">
+        <input id="comp-name" placeholder="名字" style="width:130px">
+        <select id="comp-class" style="width:130px">
+          {% for cid, cname in class_options %}<option value="{{ cid }}">{{ cname }}</option>{% endfor %}
+        </select>
+        <input id="comp-level" type="number" value="1" min="1" max="20" style="width:70px" title="初始等级（1-20）">
+        <button class="btn primary" id="btn-comp-add">生成同伴</button>
+      </div>
+      <ul class="char-list">
+      {% for c in companions %}
+        <li>
+          <span>{{ c.name }} <span class="dim">{{ c.race }}{{ c.klass }} {{ c.level }}级</span></span>
+          <button class="btn" data-comp-remove="{{ c.id }}">移除</button>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="card">
+      <h2>战役结构</h2>
+      <p class="dim">模组骨架：枢纽镇 + 三阶任务链 + 终局。生成草案后可直接编辑 JSON，保存前服务端逐字段校验；结构会随每轮对话注入 AI，成为硬约束。</p>
+      {% if campaign_summary %}<p class="dim">当前：{{ campaign_summary }}</p>{% endif %}
+      <textarea id="s-campaign" rows="16" spellcheck="false" style="font-family:Consolas,monospace;font-size:12px;" placeholder="点「用 AI 生成草案」，或手工粘贴结构 JSON">{{ campaign_json }}</textarea>
+      <div class="row">
+        <button class="btn primary" id="btn-camp-gen">用 AI 生成草案</button>
+        <button class="btn" id="btn-camp-save">校验并保存</button>
+        <button class="btn" id="btn-camp-clear">清空结构</button>
+        <button class="btn" id="btn-camp-reset">重置进度（回起点）</button>
+        <span class="dim" id="camp-status"></span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>手动存档 / 载入</h2>
+      <div class="row">
+        <input id="s-save-name" placeholder="存档名（可空）">
+        <button class="btn primary" id="btn-save">保存当前战役</button>
+        <a class="btn" href="/export/campaign">导出战役 JSON</a>
+      </div>
+      <ul class="char-list" id="save-list">
+      {% for s in saves %}
+        <li>
+          <div class="charmeta"><strong>{{ s.name }}</strong><span class="dim">角色 {{ s.chars }} · 日志 {{ s.log }}</span></div>
+          <button class="btn" data-load="{{ s.name }}">载入</button>
+        </li>
+      {% endfor %}
+      </ul>
+      <p class="dim">当前日志 {{ log_len }} 条 · AI 摘要 {{ summary_len }} 字</p>
+    </div>
+    <div class="card">
+      <h2>局域网防火墙</h2>
+      <p class="dim">若其他设备无法访问本机网址，在 Windows 管理员 PowerShell 运行：scripts\windows_firewall.ps1 -Port 8000（端口以启动时提示为准）。</p>
+    </div>
+    <div class="card">
+      <h2>诊断（调试模式）</h2>
+      <p class="dim">开启后把 WS / AI / 引擎事件写入 <code>data/logs/</code> 的 JSONL 文件（API key 与 token 自动打码）。启动时也可用 <code>python run.py --debug</code>。</p>
+      <div class="row">
+        <button class="btn primary" id="btn-debug">{{ "关闭调试日志" if debug_enabled else "开启调试日志" }}</button>
+        <span class="dim">当前：{{ "开启" if debug_enabled else "关闭" }}{% if debug_file %} · {{ debug_file }}{% endif %}</span>
+      </div>
+      <ul class="char-list">
+      {% for f in debug_files %}
+        <li>
+          <span>{{ f.name }} <span class="dim">{{ (f.size / 1024) | round(1) }} KB</span></span>
+          <a class="btn" href="/download/debug/{{ f.name }}">下载</a>
+        </li>
+      {% endfor %}
+      </ul>
+      <div class="row">
+        <a class="btn" href="/download/snapshot">下载当前状态快照（JSON）</a>
+      </div>
+    </div>
+  </div>
+  <aside class="create-side">
+    <div class="card sticky">
+      <h2>说明</h2>
+      <p class="dim">存档为手动快照：未保存的战斗、日志与 AI 摘要不会自动保留。</p>
+      <p class="dim">角色创建后已自动写入 data/characters/，换机可用存档或角色卡继续。</p>
+    </div>
+  </aside>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const $ = (id) => document.getElementById(id);
+async function post(url, data) {
+  const res = await fetch(url, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(data)});
+  return res.json();
+}
+function status(text) { $("llm-status").textContent = text; }
+$("btn-save-llm").onclick = async () => {
+  const out = await post("/api/manage/settings", {base_url: $("s-base").value, api_key: $("s-key").value, model: $("s-model").value});
+  status(out.ok ? "已保存" : ("失败：" + (out.error || "")));
+};
+$("btn-test-llm").onclick = async () => {
+  status("测试中…");
+  const out = await post("/api/manage/test_llm", {});
+  status(out.ok ? ("回复：" + out.reply) : ("失败：" + (out.error || "")));
+};
+$("btn-save-world").onclick = async () => {
+  const out = await post("/api/manage/settings", {world: $("s-world").value});
+  status(out.ok ? "世界设定已保存" : ("失败：" + (out.error || "")));
+};
+$("btn-save-dmnote").onclick = async () => {
+  const out = await post("/api/manage/settings", {dm_note: $("s-dmnote").value});
+  status(out.ok ? "主持要求已保存" : ("失败：" + (out.error || "")));
+};
+$("btn-debug").onclick = async () => {
+  const enabling = {{ "false" if debug_enabled else "true" }};
+  const out = await post("/api/manage/debug", {enabled: enabling});
+  if (out.ok) location.reload(); else alert(out.error || "操作失败");
+};
+function campStatus(text) { $("camp-status").textContent = text; }
+$("btn-camp-gen").onclick = async () => {
+  campStatus("生成中（约 10-30 秒，请稍候）…");
+  const out = await post("/api/manage/campaign/generate", {});
+  if (out.ok) {
+    $("s-campaign").value = out.draft;
+    campStatus("草案已生成——检查/编辑后点「校验并保存」");
+  } else {
+    campStatus("生成失败：" + (out.error || ""));
+  }
+};
+$("btn-camp-save").onclick = async () => {
+  const out = await post("/api/manage/campaign/save", {json_text: $("s-campaign").value});
+  if (out.ok) location.reload();
+  else campStatus("校验失败：" + ((out.errors || [out.error || "未知错误"]).join("；")));
+};
+$("btn-camp-clear").onclick = async () => {
+  if (!confirm("清空战役结构？任务进度与压力会一并移除（角色与日志不受影响）")) return;
+  const out = await post("/api/manage/campaign/clear", {});
+  if (out.ok) location.reload(); else alert(out.error || "操作失败");
+};
+$("btn-camp-reset").onclick = async () => {
+  if (!confirm("重置战役进度？\n\n会归零：任务状态与注记、世界登记、压力、游戏时钟、AI 摘要、日志。\n会保留：战役结构、角色卡、存档。\n\n建议先用下方「保存当前战役」备份。")) return;
+  const out = await post("/api/manage/reset_campaign", {});
+  if (out.ok) location.reload(); else alert(out.error || "操作失败");
+};
+$("btn-comp-add").onclick = async () => {
+  const out = await post("/api/manage/companion", {
+    name: $("comp-name").value,
+    klass: $("comp-class").value,
+    level: parseInt($("comp-level").value || "1", 10),
+  });
+  if (out.ok) location.reload(); else alert(out.error || "生成失败");
+};
+document.querySelectorAll("[data-comp-remove]").forEach((btn) => {
+  btn.onclick = async () => {
+    if (!confirm("移除这个同伴？")) return;
+    const out = await post("/api/manage/companion/remove", {character_id: btn.dataset.compRemove});
+    if (out.ok) location.reload(); else alert(out.error || "移除失败");
+  };
+});
+$("btn-save-mode").onclick = async () => {
+  const mode = document.querySelector('input[name="mode"]:checked').value;
+  const out = await post("/api/manage/mode", {ai_mode: mode === "ai"});
+  if (out.ok) location.reload(); else alert(out.error || "操作失败");
+};
+const clearDmBtn = $("btn-clear-dm");
+if (clearDmBtn) clearDmBtn.onclick = async () => {
+  if (!confirm("清空 GM 席位？该玩家将失去 GM 权限（其浏览器可重新接任）。")) return;
+  const out = await post("/api/manage/clear_dm", {});
+  if (out.ok) location.reload(); else alert(out.error || "操作失败");
+};
+$("btn-save").onclick = async () => {
+  const out = await post("/api/manage/save", {name: $("s-save-name").value});
+  if (out.ok) location.reload(); else alert(out.error || "保存失败");
+};
+document.querySelectorAll("[data-load]").forEach((btn) => {
+  btn.onclick = async () => {
+    if (!confirm("载入存档会覆盖当前战役状态，确定？")) return;
+    const out = await post("/api/manage/load", {name: btn.dataset.load});
+    if (out.ok) location.reload(); else alert(out.error || "载入失败");
+  };
+});
+</script>
+{% endblock %}
