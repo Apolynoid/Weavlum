@@ -1,6 +1,6 @@
 # Weavlum · 黑旗 SRD 局域网跑团平台
 
-<h3 align="center">Developed with DeepSeek</h3>
+**Developed with DeepSeek**
 
 一个中文、自托管的桌面角色扮演（TRPG）平台：**AI 游戏主持人（GM）+ 服务器权威规则引擎 + 局域网多人联机**。
 规则体系基于 **Black Flag Roleplaying（黑旗 SRD，ORC 许可）**：13 职业（含机械师）、6 血统 + 9 传承、
@@ -93,4 +93,4 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ---
 
-<p><sub>DeepSeek 为开发辅助工具；本项目与 DeepSeek 官方无隶属、合作或背书关系。DeepSeek 名称归其权利人所有。</sub></p>
+*DeepSeek 为开发辅助工具；本项目与 DeepSeek 官方无隶属、合作或背书关系。DeepSeek 名称归其权利人所有。*
